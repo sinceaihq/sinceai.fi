@@ -43,8 +43,8 @@ const teamMembers = [
   {
     name: "Arttu Myyryläinen",
     role: "Strategic Outreach",
-    email: "arttu.myyrilainen@sinceai.fi",
-    linkedin: "https://www.linkedin.com/in/arttu-myyryl%C3%A4inen/",
+    email: "arttu.myyrylainen@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/arttumyyrylainen/",
   },
   {
     name: "Arttu Karonen",
