@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({
   ];
 
   return (
-    <footer className="bg-black border-t border-white/5">
+    <footer className="bg-black border-t border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
         <div className="py-16">
@@ -124,7 +124,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Social Icons - Centered */}
-          <div className="flex justify-center gap-6 mb-12">
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-12">
             {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
