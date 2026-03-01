@@ -5,3 +5,4 @@ export { ProofStrip } from "./ProofStrip";
 export { ProjectSpotlight } from "./ProjectSpotlight";
 export { DualCTA } from "./DualCTA";
 export { LatestPosts } from "./LatestPosts";
+export { PartnersSection } from "./PartnersSection";

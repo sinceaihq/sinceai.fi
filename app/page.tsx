@@ -17,6 +17,7 @@ import { ProofStrip } from "@/components/sections/homepage/ProofStrip";
 import { ProjectSpotlight } from "@/components/sections/homepage/ProjectSpotlight";
 import { DualCTA } from "@/components/sections/homepage/DualCTA";
 import { LatestPosts } from "@/components/sections/homepage/LatestPosts";
+import { PartnersSection } from "@/components/sections/homepage/PartnersSection";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,6 +66,9 @@ export default function HomePage() {
 
           {/* G) Dual CTA - Partner + Join */}
           <DualCTA discordUrl={config.discordUrl} />
+
+          {/* H) Partners & Supporters */}
+          <PartnersSection />
 
           {/* Footer */}
           <Footer discordUrl={config.discordUrl} />

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import SmoothScroll from "@/components/smoothScroll";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/Footer";
@@ -11,15 +10,26 @@ import { UPCOMING_EVENT_2026 } from "@/lib/sinceai";
 
 export default function PartnersPage() {
   const partnerCompanies = [
-    { name: "Valmet", logo: "/assets/sponsors/valmet.png", industry: "Industrial Technology" },
-    { name: "Sandvik", logo: "/assets/sponsors/sandvik.png", industry: "Engineering" },
-    { name: "Kongsberg", logo: "/assets/sponsors/kongsberg.png", industry: "Maritime Technology" },
-    { name: "ElevenLabs", logo: "/assets/sponsors/elevenlabs.png", industry: "AI Voice Technology" },
-    { name: "Antler", logo: "/assets/sponsors/antler.png", industry: "Venture Capital" },
-    { name: "Featherless.ai", logo: "/assets/sponsors/featherless.svg", industry: "AI Infrastructure" },
-    { name: "Skillio", logo: "/assets/sponsors/Skillio.png", industry: "EdTech" },
-    { name: "Apelago", logo: "/assets/sponsors/apelago.png", industry: "Software" },
-    { name: "Eisko", logo: "/assets/sponsors/eisko.svg", industry: "Technology" },
+    { name: "Valmet",         logo: "/assets/sponsors/valmet.png",        url: "https://www.valmet.com/" },
+    { name: "Sandvik",        logo: "/assets/sponsors/sandvik.png",       url: "https://www.home.sandvik" },
+    { name: "Kongsberg",      logo: "/assets/sponsors/kongsberg.png",     url: "https://www.kongsberg.com/" },
+    { name: "ElevenLabs",     logo: "/assets/sponsors/elevenlabs.png",    url: "https://elevenlabs.io/" },
+    { name: "Antler",         logo: "/assets/sponsors/antler.png",        url: "https://www.antler.co/" },
+    { name: "Featherless.ai", logo: "/assets/sponsors/featherless.svg",   url: "https://featherless.ai/" },
+    { name: "Skillio",        logo: "/assets/sponsors/Skillio.png",       url: "https://skillio.ai/" },
+    { name: "A'Pelago",       logo: "/assets/sponsors/apelago.png",       url: "https://www.apelago.fi/" },
+    { name: "Eisko",          logo: "/assets/sponsors/eisko.svg",         url: "https://www.eisko.fi/" },
+    { name: "Business Turku", logo: "/assets/sponsors/businessturku.png", url: "https://businessturku.fi/" },
+    { name: "Bayer",          logo: "/assets/sponsors/Bayer.svg",         url: "https://www.bayer.com/" },
+  ];
+
+  const supportingPartners = [
+    { name: "University of Turku", logo: "/assets/supports/universityofturku.png", url: "https://www.utu.fi" },
+    { name: "Turku AMK",           logo: "/assets/supports/turkuamk.png",          url: "https://www.turkuamk.fi/" },
+    { name: "City of Turku",       logo: "/assets/supports/cityofturku.png",       url: "https://www.turku.fi" },
+    { name: "Boost Turku",         logo: "/assets/supports/boost.svg",             url: "https://www.boostturku.com/" },
+    { name: "AI Mad Lab",          logo: "/assets/supports/aimadlab.svg",          url: "https://www.aimadlab.com/" },
+    { name: "Aalto AI",            logo: "/assets/supports/aaltoai.png",           url: "https://www.aaltoai.com/" },
   ];
 
   const stats = [
@@ -260,7 +270,11 @@ export default function PartnersPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            {/* Sponsors */}
+            <p className="text-xs uppercase tracking-widest text-neutral-600 font-semibold text-center mb-10">
+              Partners
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-16 gap-y-10 items-center justify-items-center mb-16">
               {partnerCompanies.map((partner, index) => (
                 <motion.div
                   key={partner.name}
@@ -268,15 +282,53 @@ export default function PartnersPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="group relative aspect-square flex items-center justify-center p-6 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300"
                 >
-                  <Image
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    width={120}
-                    height={60}
-                    className="object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                  />
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-center min-w-[120px] h-16"
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      style={{ height: '64px', width: 'auto' }}
+                      className="object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                    />
+                  </a>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Divider */}
+            <div className="border-t border-white/5 my-14" />
+
+            {/* Supporting Partners */}
+            <p className="text-xs uppercase tracking-widest text-neutral-600 font-semibold text-center mb-10">
+              Supporting Partners
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-16 gap-y-10 items-center justify-items-center">
+              {supportingPartners.map((partner, index) => (
+                <motion.div
+                  key={partner.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                >
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-center min-w-[120px] h-16"
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      style={{ height: '64px', width: 'auto' }}
+                      className="object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                    />
+                  </a>
                 </motion.div>
               ))}
             </div>

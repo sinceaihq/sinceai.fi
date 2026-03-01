@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { InView } from "@/components/motion-primitives/in-view";
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
@@ -95,12 +94,11 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                     key={item.name}
                     className="flex items-center justify-center h-16 w-40 opacity-40 hover:opacity-100 transition-all duration-500 group"
                   >
-                    <Image
+                    <img
                       src={item.logo}
                       alt={`${item.name} logo — Since AI hackathon partner`}
-                      width={140}
-                      height={60}
-                      className="object-contain max-h-full filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                      style={{ height: '64px', width: 'auto' }}
+                      className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
                 ))}

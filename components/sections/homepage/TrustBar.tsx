@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 export function TrustBar() {
   // All logos mixed together (partners + supporters)
   const allLogos = [
+    { name: "Bayer", logo: "/assets/sponsors/Bayer.svg" },
     { name: "Valmet", logo: "/assets/sponsors/valmet.png" },
     { name: "University of Turku", logo: "/assets/supports/universityofturku.png" },
     { name: "Sandvik", logo: "/assets/sponsors/sandvik.png" },
@@ -41,12 +41,10 @@ export function TrustBar() {
                     key={`logo-${setNum}-${index}`}
                     className="logo-item"
                   >
-                    <Image
+                    <img
                       src={logo.logo}
                       alt={`${logo.name} logo`}
-                      width={120}
-                      height={60}
-                      style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
+                      style={{ height: '64px', width: 'auto' }}
                       className="object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                     />
                   </div>

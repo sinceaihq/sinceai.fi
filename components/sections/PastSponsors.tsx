@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { InView } from "@/components/motion-primitives/in-view";
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 
@@ -75,12 +74,11 @@ export const PastSponsors: React.FC<PastSponsorsProps> = ({
                 className="flex items-center justify-center p-4 rounded-2xl transition-all duration-300 min-w-[150px]"
                 aria-label={sponsor.alt}
               >
-                <Image
+                <img
                   src={sponsor.src}
                   alt={sponsor.alt}
-                  width={128}
-                  height={48}
-                  className="max-w-32 h-12 object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  style={{ height: '48px', width: 'auto' }}
+                  className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
                   loading="lazy"
                 />
               </a>
@@ -115,12 +113,11 @@ export const PastSponsors: React.FC<PastSponsorsProps> = ({
               className="flex items-center justify-center p-4 rounded-2xl transition-all duration-300"
               aria-label={support.alt}
             >
-              <Image
+              <img
                 src={support.src}
                 alt={support.alt}
-                width={112}
-                height={48}
-                className="max-w-28 object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                style={{ height: '48px', width: 'auto' }}
+                className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
                 loading="lazy"
               />
             </a>
