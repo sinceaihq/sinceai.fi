@@ -57,6 +57,54 @@ const teamMembers = [
     role: "Social Media",
     linkedin: "https://www.linkedin.com/in/vishaka-salpiumi-3b6578349/",
   },
+  {
+    name: "Abel Alem",
+    role: "Web & Tech",
+    email: "abel@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/abel-alem-25420b263",
+  },
+  {
+    name: "Joonas Ukkonen",
+    role: "Sales & Partnerships",
+    email: "joonas.ukkonen@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/joonas-ukkonen-29844022b/",
+  },
+  {
+    name: "Juho Salmi",
+    role: "Sales & Partnerships",
+    email: "juho.salmi@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/juho-salmi-381609370/",
+  },
+  {
+    name: "Ossama Essfadi",
+    role: "Tech",
+    email: "ossama@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/essfadi/",
+  },
+  {
+    name: "Stephen Racal",
+    role: "Sales & Partnerships",
+    email: "stephen@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/stephen-racal-839ab1138/",
+  },
+  {
+    name: "Toki Mohammad Tahmid",
+    role: "Production",
+    email: "toki@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/toki-mohammad-t-a7b334159/",
+  },
+  {
+    name: "Tuomas Rikkonen",
+    role: "Production",
+    email: "tuomas.rikkonen@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/tuomas-rikkonen-8664421a9/",
+  },
+  {
+    name: "Tzu Tai Huang",
+    role: "Production & Volunteers",
+    email: "tzu@sinceai.fi",
+    linkedin: "https://www.linkedin.com/in/tzu-tai-huang/",
+  },
 ];
 
 // Configuration
