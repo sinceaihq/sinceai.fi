@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { TrustBar } from "@/components/sections/homepage/TrustBar";
+import { CountdownTimer } from "@/components/countdown-timer";
 
 // FAQ data — visible in DOM and mirrored in JSON-LD
 const hackathonFaqs = [
@@ -226,13 +227,14 @@ export default function HackathonPage() {
         <section className="relative w-full min-h-[90vh] flex items-center justify-center">
           {/* Background image */}
           <Image
-            src="/assets/images/educity.jpg"
+            src="/assets/images/educity.png"
             alt="EduCity building at Turku University of Applied Sciences"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-x-0 bottom-0 h-40 md:h-64 bg-linear-to-t from-black to-transparent" />
 
           <div className="relative z-10 max-w-5xl mx-auto px-6 py-32 text-center">
             <motion.div
@@ -244,17 +246,12 @@ export default function HackathonPage() {
                 Since AI Hackathon 2026
               </h1>
 
-              <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto mb-6">
+              <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto mb-10">
                 Europe&apos;s Premier Annual AI Hackathon — Turku, Finland
               </p>
 
-              <p className="text-base md:text-lg text-neutral-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Since AI Hackathon is our flagship annual event and one of
-                Europe&apos;s largest AI hackathons. Builders from across Europe
-                and the world gather at EduCity, Turku to solve real industry
-                challenges, ship working AI products, and compete for prizes —
-                all in 72 hours. Now an official MLH partner event.
-              </p>
+              {/* TODO: set exact time for event */}
+              <CountdownTimer targetDate="2026-11-06T09:00:00" />
 
               {/* Stats row */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12 max-w-4xl mx-auto">
