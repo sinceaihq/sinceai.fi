@@ -141,6 +141,12 @@ const teamSections = [
         email: "roope.kantola@sinceai.fi",
         linkedin: "https://www.linkedin.com/in/roope-kantola-131b23320/",
       },
+      {
+        name: "Henri Mäki",
+        role: "Finance",
+        email: "henri.maki@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/henri-m%C3%A4ki-4409192b7/",
+      },
     ],
   },
 ];
