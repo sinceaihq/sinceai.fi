@@ -32,6 +32,24 @@ const teamSections = [
         linkedin: "https://www.linkedin.com/in/tuomas-rikkonen-8664421a9/",
       },
       {
+        name: "Roope Kantola",
+        role: "Sales & Partnerships",
+        email: "roope.kantola@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/roope-kantola-131b23320/",
+      },
+      {
+        name: "Henri Mäki",
+        role: "Sales & Partnerships",
+        email: "henri.maki@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/henri-m%C3%A4ki-4409192b7/",
+      },
+      {
+        name: "Eemil Ketonen",
+        role: "Sales & Partnerships",
+        email: "eemil.ketonen@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/eemil-ketonen-398a792b3/",
+      },
+      {
         name: "Aarne Ollila",
         role: "Sales & Partnerships",
         email: "aarne.ollila@sinceai.fi",
@@ -134,18 +152,6 @@ const teamSections = [
         role: "Finance",
         email: "arttu.karonen@sinceai.fi",
         linkedin: "https://www.linkedin.com/in/arttu-karonen-526872261/",
-      },
-      {
-        name: "Roope Kantola",
-        role: "Finance",
-        email: "roope.kantola@sinceai.fi",
-        linkedin: "https://www.linkedin.com/in/roope-kantola-131b23320/",
-      },
-      {
-        name: "Henri Mäki",
-        role: "Finance",
-        email: "henri.maki@sinceai.fi",
-        linkedin: "https://www.linkedin.com/in/henri-m%C3%A4ki-4409192b7/",
       },
     ],
   },
