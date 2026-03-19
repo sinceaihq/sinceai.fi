@@ -18,6 +18,7 @@ import { ProjectSpotlight } from "@/components/sections/homepage/ProjectSpotligh
 import { DualCTA } from "@/components/sections/homepage/DualCTA";
 import { LatestPosts } from "@/components/sections/homepage/LatestPosts";
 import { PartnersSection } from "@/components/sections/homepage/PartnersSection";
+import LandingHeroSection from "@/components/LandingHeroSection";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,7 +48,8 @@ export default function HomePage() {
 
         <main className="flex flex-col w-full overflow-hidden">
           {/* A) Hero - Minimal */}
-          <LeanHero discordUrl={config.discordUrl} />
+          <LandingHeroSection />
+          {/* <LeanHero discordUrl={config.discordUrl} /> */}
 
           {/* B) Trust Bar - Logos ONCE */}
           <TrustBar />
