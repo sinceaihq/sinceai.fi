@@ -30,6 +30,7 @@ export const ORG = {
     tiktok: "https://www.tiktok.com/@sinceaihq",
     medium: "https://medium.com/@sinceai",
     substack: "https://sinceai.substack.com",
+    reddit: "https://www.reddit.com/r/SinceAI/",
   },
   stats: {
     members: "500+",

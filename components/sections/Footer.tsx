@@ -11,6 +11,7 @@ import {
   FaYoutube,
   FaTiktok,
   FaMedium,
+  FaReddit,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
@@ -35,6 +36,7 @@ export const Footer: React.FC<FooterProps> = ({
     { name: "Facebook", href: ORG.social.facebook, icon: FaFacebook },
     { name: "Medium", href: ORG.social.medium, icon: FaMedium },
     { name: "Substack", href: ORG.social.substack, icon: SiSubstack },
+    { name: "Reddit", href: ORG.social.reddit, icon: FaReddit },
   ];
 
   const navigationColumns = [
