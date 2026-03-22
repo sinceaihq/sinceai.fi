@@ -68,6 +68,12 @@ const teamSections = [
         linkedin: "https://www.linkedin.com/in/aman--vyas/",
       },
       {
+        name: "Axel Eriksson",
+        role: "Sales & Partnerships",
+        email: "axel.eriksson@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/axel-eriksson-360796365/",
+      },
+      {
         name: "Riku Lauttia",
         role: "Sales & Operations",
         email: "riku.lauttia@sinceai.fi",
@@ -95,6 +101,12 @@ const teamSections = [
         name: "Vishaka Salpiumi",
         role: "Social Media",
         linkedin: "https://www.linkedin.com/in/vishaka-salpiumi-3b6578349/",
+      },
+      {
+        name: "Hasnain Ajmal",
+        role: "Social Media",
+        email: "hasnain@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/hasnaynajmal/",
       },
     ],
   },
