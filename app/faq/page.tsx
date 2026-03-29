@@ -186,8 +186,8 @@ export default function FAQPage() {
             </h1>
             
             <p className="text-xl text-neutral-400 leading-relaxed mb-12">
-              Everything you need to know about Since AI, Finland's largest AI community with 500+ members 
-              based in Turku. Can't find your answer?{" "}
+              Everything you need to know about Since AI, Finland&apos;s largest AI community with 500+ members 
+              based in Turku. Can&apos;t find your answer?{" "}
               <Link href="/contact" className="text-white hover:text-neutral-300 underline">
                 Contact our team
               </Link>.

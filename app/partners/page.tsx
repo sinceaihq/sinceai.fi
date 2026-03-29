@@ -173,7 +173,7 @@ export default function PartnersPage() {
               
               <p className="text-xl md:text-2xl text-neutral-400 leading-relaxed mb-8">
                 Partner with Since AI to recruit top talent, solve technical challenges, and build 
-                your brand in Finland's largest AI community. 80% of our partners have successfully 
+                your brand in Finland&apos;s largest AI community. 80% of our partners have successfully 
                 hired developers from our hackathons.
               </p>
 
@@ -244,7 +244,7 @@ export default function PartnersPage() {
                 Trusted by Leading Companies
               </h2>
               <p className="text-lg text-neutral-400">
-                Join 15+ companies investing in Finland's AI community
+                Join 15+ companies investing in Finland&apos;s AI community
               </p>
             </div>
 
@@ -386,7 +386,7 @@ export default function PartnersPage() {
                   className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] flex flex-col"
                 >
                   <p className="text-neutral-300 leading-relaxed mb-6 flex-1 italic">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div className="space-y-3 pt-6 border-t border-white/10">
                     <div>
@@ -417,7 +417,7 @@ export default function PartnersPage() {
                     Many partners came in expecting early-stage concepts. Instead, they were genuinely surprised by how far teams could push a solution in 72 hours—not just prototypes, but testable, demo-ready systems with clear reasoning and trade-offs.
                   </p>
                   <p>
-                    What made the difference was team composition: several teams naturally formed like real startups—a strong software engineer, an AI/ML engineer, a commercially minded builder, and a confident presenter. The result wasn't "hackathon theater"; for many partners, the output was already good enough for a first internal pilot right after the event.
+                    What made the difference was team composition: several teams naturally formed like real startups—a strong software engineer, an AI/ML engineer, a commercially minded builder, and a confident presenter. The result wasn&apos;t &ldquo;hackathon theater&rdquo;; for many partners, the output was already good enough for a first internal pilot right after the event.
                   </p>
                 </div>
                 <p className="text-sm text-neutral-500 mt-6 italic">
@@ -513,7 +513,7 @@ export default function PartnersPage() {
               </h2>
               <p className="text-lg text-neutral-400 mb-8 max-w-2xl mx-auto">
                 Join Valmet, Sandvik, Kongsberg, ElevenLabs, and 10+ other leading companies 
-                investing in Finland's AI community. Let's discuss how we can help you achieve 
+                investing in Finland&apos;s AI community. Let&apos;s discuss how we can help you achieve 
                 your goals.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">

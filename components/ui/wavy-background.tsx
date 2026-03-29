@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyBackground = ({
@@ -15,7 +15,7 @@ export const WavyBackground = ({
   waveOpacity = 0.5,
   ...props
 }: {
-  children?: any;
+  children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   colors?: string[];
@@ -24,9 +24,9 @@ export const WavyBackground = ({
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
-  const noise = useRef(createNoise3D()).current;
+  const noise = useMemo(() => createNoise3D(), []);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const animationIdRef = useRef<number>(0);
@@ -128,12 +128,14 @@ export const WavyBackground = ({
   }, [blur, backgroundFill, waveOpacity, waveWidth, speedValue, waveColors, noise]);
 
   const [isSafari, setIsSafari] = useState(false);
+  
   useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
+    // Detect Safari after hydration to avoid SSR mismatch
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsSafari(
       typeof window !== "undefined" &&
-        navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
+      navigator.userAgent.includes("Safari") &&
+      !navigator.userAgent.includes("Chrome")
     );
   }, []);
 

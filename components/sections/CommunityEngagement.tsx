@@ -78,9 +78,9 @@ export const CommunityEngagement: React.FC<CommunityEngagementProps> = ({
               Year-Round Community
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center leading-tight text-white max-w-4xl">
-              It's not just an event.
+              It&apos;s not just an event.
               <br />
-              <span className="text-white/70">It's a community.</span>
+              <span className="text-white/70">It&apos;s a community.</span>
             </h2>
           </div>
         </InView>

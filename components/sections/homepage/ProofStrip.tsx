@@ -45,7 +45,7 @@ export function ProofStrip() {
           className="max-w-3xl mx-auto text-center"
         >
           <blockquote className="text-xl md:text-2xl font-light text-neutral-300 leading-relaxed mb-6">
-            "We hired 3 exceptional developers. Best recruiting investment we made this year."
+            &ldquo;We hired 3 exceptional developers. Best recruiting investment we made this year.&rdquo;
           </blockquote>
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm font-semibold text-neutral-400">

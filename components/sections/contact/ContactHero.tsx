@@ -40,7 +40,7 @@ export const ContactHero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Let's Work{" "}
+          Let&apos;s Work{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/90 to-white/70">
             Together
           </span>
@@ -53,8 +53,8 @@ export const ContactHero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Whether you're a community member, potential partner, or just
-          curious—we'd love to hear from you.
+          Whether you&apos;re a community member, potential partner, or just
+          curious—we&apos;d love to hear from you.
         </motion.p>
 
         {/* Decorative divider */}

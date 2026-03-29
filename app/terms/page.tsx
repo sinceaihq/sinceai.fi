@@ -42,7 +42,7 @@ export default function TermsPage() {
                 <li>Contribute constructively to discussions and events</li>
                 <li>Respect intellectual property rights of others</li>
                 <li>Not engage in harassment, discrimination, or harmful behavior</li>
-                <li>Comply with Discord's Terms of Service and Community Guidelines</li>
+                <li>Comply with Discord&apos;s Terms of Service and Community Guidelines</li>
               </ul>
             </section>
 
@@ -86,7 +86,7 @@ export default function TermsPage() {
                 Disclaimer
               </h2>
               <p className="text-neutral-300 leading-relaxed mb-4">
-                Since AI provides community services and events "as is" without warranties of any kind. 
+                Since AI provides community services and events &ldquo;as is&rdquo; without warranties of any kind. 
                 We are not responsible for interactions between community members, project outcomes, 
                 or employment opportunities that may arise from participation.
               </p>

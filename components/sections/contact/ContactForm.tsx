@@ -261,7 +261,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ preselectedSubject }) 
             Send us a message
           </h2>
           <p className="text-white/60 font-light">
-            Tell us what's on your mind. We'll get back to you within 24 hours.
+            Tell us what&apos;s on your mind. We&apos;ll get back to you within 24 hours.
           </p>
         </motion.div>
 
@@ -280,7 +280,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ preselectedSubject }) 
                 Message sent!
               </h3>
               <p className="text-white/60 mb-6">
-                Thanks for reaching out. We'll be in touch within 24 hours.
+                Thanks for reaching out. We&apos;ll be in touch within 24 hours.
               </p>
               <Button
                 type="button"

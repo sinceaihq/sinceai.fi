@@ -212,7 +212,7 @@ export function filterChallengeThemes(
 ): ChallengeTheme[] {
   return challengeThemes.filter(theme => {
     if (industry && theme.industry !== industry) return false;
-    if (modality && !theme.modality.includes(modality as any)) return false;
+    if (modality && !theme.modality.includes(modality as ChallengeTheme['modality'][number])) return false;
     if (sponsor && theme.sponsor !== sponsor) return false;
     if (searchQuery) {
       const query = searchQuery.toLowerCase();

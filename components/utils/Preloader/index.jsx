@@ -22,9 +22,14 @@ export default function Index() {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    const updateDimensions = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
-    }
+    };
+    
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    
+    return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
   useEffect(() => {

@@ -84,7 +84,7 @@ export default function PressPage() {
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   Since AI brings together AI developers, researchers, and companies to collaborate on 
                   real-world challenges. Our hackathons have produced projects in maritime safety, customer 
-                  support automation, computer vision, and more. We're supported by leading organizations 
+                  support automation, computer vision, and more. We&apos;re supported by leading organizations 
                   including the University of Turku, Turku University of Applied Sciences, City of Turku, 
                   and Business Turku.
                 </p>

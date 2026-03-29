@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter leading-[1.15] overflow-visible">
-              <span className="block text-white pb-2">The AI builders' community</span>
+              <span className="block text-white pb-2">The AI builders&apos; community</span>
               <span className="block text-white pb-2">in Europe —</span>
               <span className="block bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent pb-6">
                 Turku-based, globally connected.
@@ -47,7 +47,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
             <p>
-              Since AI brings together <strong className="text-white font-semibold">500+ AI builders, researchers, and founders</strong> across Europe — and we're building the next bridge to the world's best talent from places like Stanford, Tsinghua, and top labs in China and the US.
+              Since AI brings together <strong className="text-white font-semibold">500+ AI builders, researchers, and founders</strong> across Europe — and we&apos;re building the next bridge to the world&apos;s best talent from places like Stanford, Tsinghua, and top labs in China and the US.
             </p>
             <p className="text-neutral-400">
               We run high-signal hackathons, meetups, and builder programs where teams ship real AI products: <span className="text-neutral-300">code, demos, deployments, and measurable outcomes</span> — in collaboration with partner companies that bring real-world problems and hiring opportunities.
@@ -112,7 +112,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Micro-line qualifier */}
             <p className="text-sm text-neutral-500 font-medium tracking-wide">
-              If you're building serious AI, you'll fit in here.
+              If you&apos;re building serious AI, you&apos;ll fit in here.
             </p>
           </motion.div>
         </div>

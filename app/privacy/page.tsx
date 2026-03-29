@@ -91,7 +91,7 @@ export default function PrivacyPage() {
                 Third-Party Services
               </h2>
               <p className="text-neutral-300 leading-relaxed mb-4">
-                We use Discord for community management. Please review Discord's privacy policy for 
+                We use Discord for community management. Please review Discord&apos;s privacy policy for 
                 information about how they handle your data. We do not share your personal information 
                 with third parties for marketing purposes.
               </p>

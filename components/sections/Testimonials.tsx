@@ -147,7 +147,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
                   
                   <div className="relative">
                     <p className="text-neutral-300 font-normal leading-relaxed mb-8 text-base">
-                      "{testimonial.quote}"
+                      &ldquo;{testimonial.quote}&rdquo;
                     </p>
                     
                     <div className="flex items-center gap-4">
@@ -181,7 +181,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
                   >
                     <div className="relative">
                       <p className="text-neutral-300 font-normal leading-relaxed mb-8 text-base">
-                        "{participantTestimonials[activeIndex].quote}"
+                        &ldquo;{participantTestimonials[activeIndex].quote}&rdquo;
                       </p>
                       
                       <div className="flex items-center gap-4">

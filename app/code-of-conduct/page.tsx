@@ -61,7 +61,7 @@ export default function CodeOfConductPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>
-                    <span><strong className="text-white">Be collaborative:</strong> Share knowledge freely. Help others learn. Give credit where it's due.</span>
+                    <span><strong className="text-white">Be collaborative:</strong> Share knowledge freely. Help others learn. Give credit where it&apos;s due.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>
@@ -162,7 +162,7 @@ export default function CodeOfConductPage() {
                 </div>
                 <p className="text-neutral-400 leading-relaxed mb-4">
                   All reports will be handled with discretion. We will respect confidentiality requests 
-                  to protect victims of abuse. We may publicly name a person about whom we've received 
+                  to protect victims of abuse. We may publicly name a person about whom we&apos;ve received 
                   harassment complaints, or privately warn third parties about them, if we believe that 
                   doing so will increase the safety of our members or the general public.
                 </p>

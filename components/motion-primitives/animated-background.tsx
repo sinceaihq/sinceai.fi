@@ -5,7 +5,6 @@ import {
   Children,
   cloneElement,
   ReactElement,
-  useEffect,
   useState,
   useId,
 } from 'react';
@@ -29,7 +28,7 @@ export function AnimatedBackground({
   transition,
   enableHover = false,
 }: AnimatedBackgroundProps) {
-  const [activeId, setActiveId] = useState<string | null>(null);
+  const [activeId, setActiveId] = useState<string | null>(defaultValue ?? null);
   const uniqueId = useId();
 
   const handleSetActiveId = (id: string | null) => {
@@ -40,14 +39,8 @@ export function AnimatedBackground({
     }
   };
 
-  useEffect(() => {
-    if (defaultValue !== undefined) {
-      setActiveId(defaultValue);
-    }
-  }, [defaultValue]);
-
-  return Children.map(children, (child: any, index) => {
-    const id = child.props['data-id'];
+  return Children.map(children, (child: ReactElement<Record<string, unknown>>, index) => {
+    const id = child.props['data-id'] as string;
 
     const interactionProps = enableHover
       ? {
@@ -62,7 +55,7 @@ export function AnimatedBackground({
       child,
       {
         key: index,
-        className: cn('relative inline-flex', child.props.className),
+        className: cn('relative inline-flex', (child.props as { className?: string }).className),
         'data-checked': activeId === id ? 'true' : 'false',
         ...interactionProps,
       },
@@ -83,7 +76,7 @@ export function AnimatedBackground({
             />
           )}
         </AnimatePresence>
-        <div className='z-10'>{child.props.children}</div>
+        <div className='z-10'>{(child.props as { children?: React.ReactNode }).children}</div>
       </>
     );
   });

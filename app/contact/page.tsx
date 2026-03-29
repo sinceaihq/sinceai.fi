@@ -257,7 +257,7 @@ function ContactPageContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            Let's build together.
+            Let&apos;s build together.
           </motion.h1>
 
           <motion.p

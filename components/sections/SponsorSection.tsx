@@ -209,10 +209,10 @@ export const SponsorSection: React.FC<SponsorSectionProps> = ({
             <div className="relative">
               <div className="text-center mb-12">
                 <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
-                  Let's Create Something Great Together
+                  Let&apos;s Create Something Great Together
                 </h3>
                 <p className="text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto">
-                  Every partnership is different. Tell us your goals—we'll reach
+                  Every partnership is different. Tell us your goals—we&apos;ll reach
                   it with you
                 </p>
               </div>
@@ -221,7 +221,7 @@ export const SponsorSection: React.FC<SponsorSectionProps> = ({
                   className="group relative inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-500 hover:bg-neutral-100 hover:scale-[1.02] transform"
                   href="/contact"
                 >
-                  <span>Let's Talk</span>
+                  <span>Let&apos;s Talk</span>
                 </a>
               </div>
             </div>
