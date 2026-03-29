@@ -154,6 +154,18 @@ const teamSections = [
         email: "tzu@sinceai.fi",
         linkedin: "https://www.linkedin.com/in/tzu-tai-huang/",
       },
+      {
+        name: "Joan Iovchik",
+        role: "Production",
+        email: "joan@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/joan-iovchik-8b5b48314/",
+      },
+      {
+        name: "Christian Lairikko",
+        role: "Production",
+        email: "christian.lairikko@sinceai.fi",
+        linkedin: "https://www.linkedin.com/in/christian-lairikko-943657376/",
+      },
     ],
   },
   {
