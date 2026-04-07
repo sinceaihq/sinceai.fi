@@ -38,12 +38,6 @@ export const PARTNERS: Partner[] = [
     tier: "partner",
   },
   {
-    name: "Antler",
-    logo: "/assets/sponsors/antler.png",
-    url: "https://www.antler.co/",
-    tier: "partner",
-  },
-  {
     name: "Featherless.ai",
     logo: "/assets/sponsors/featherless.svg",
     url: "https://featherless.ai/",
@@ -91,12 +85,6 @@ export const PARTNERS: Partner[] = [
     url: "https://aiven.io/",
     tier: "partner",
   },
-  {
-    name: "Maria 01",
-    logo: "/assets/sponsors/maria01.png",
-    url: "https://maria.io/",
-    tier: "partner",
-  },
   // Supporters
   {
     name: "University of Turku",
@@ -132,6 +120,30 @@ export const PARTNERS: Partner[] = [
     name: "Aalto AI",
     logo: "/assets/supports/aaltoai.png",
     url: "https://www.aaltoai.com/",
+    tier: "supporter",
+  },
+  {
+    name: "Maria 01",
+    logo: "/assets/sponsors/maria01.png",
+    url: "https://maria.io/",
+    tier: "supporter",
+  },
+  {
+    name: "Tamperees",
+    logo: "/assets/sponsors/tamperees.png",
+    url: "https://tamperees.com/",
+    tier: "supporter",
+  },
+  {
+    name: "Antler",
+    logo: "/assets/sponsors/antler.png",
+    url: "https://www.antler.co/",
+    tier: "supporter",
+  },
+  {
+    name: "Founders House",
+    logo: "/assets/sponsors/founders_house.svg",
+    url: "https://founders-house.fi/",
     tier: "supporter",
   },
 ];
