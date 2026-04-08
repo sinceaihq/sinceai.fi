@@ -37,28 +37,28 @@ export function PartnersSection() {
           Partners &amp; Supporters
         </h2>
 
-        {/* Subsection 1: Partners — 11 logos, 5 columns per row */}
+        {/* Subsection 1: Partners —  5 columns on desktop, responsive*/}
         <div className="mb-14">
           <p className="text-xs uppercase tracking-widest text-neutral-600 font-semibold text-center mb-10">
             Partners
           </p>
       <LogoGrid
         items={partnerCompanies}
-        gridClass="grid grid-cols-2 sm:grid-cols-5 gap-x-6 sm:gap-x-16 gap-y-10 sm:gap-y-14 items-center justify-items-center"
+        gridClass="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-16 gap-y-14 items-center justify-items-center"
       />
     </div>
 
     {/* Divider */}
     <div className="border-t border-white/5 my-14" />
 
-      {/* Subsection 2: Supporting Partners — 4 columns on desktop, responsive */}
+      {/* Subsection 2: Supporting Partners — 5 columns on desktop, responsive */}
       <div>
         <p className="text-xs uppercase tracking-widest text-neutral-600 font-semibold text-center mb-10">
           Supporting Partners
         </p>
         <LogoGrid
           items={supportingPartners}
-          gridClass="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-14 items-center justify-items-center"
+          gridClass="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-16 gap-y-14 items-center justify-items-center"
         />
       </div>
       </div>

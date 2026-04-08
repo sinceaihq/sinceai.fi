@@ -152,6 +152,12 @@ export const PARTNERS: Partner[] = [
     url: "https://www.wave.ventures/",
     tier: "supporter",
   },
+  {
+    name: "Helsinki Think Company",
+    logo: "/assets/sponsors/Helsinki_Think_Company.png",
+    url: "https://www.thinkcompany.fi",
+    tier: "supporter",
+  },
 ];
 
 // Derived exports for convenience
