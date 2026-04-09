@@ -158,6 +158,24 @@ export const PARTNERS: Partner[] = [
     url: "https://www.thinkcompany.fi",
     tier: "supporter",
   },
+  {
+    name: "ÅAES",
+    logo: "/assets/sponsors/AAES.png",
+    url: "https://www.aaes.fi/",
+    tier: "supporter",
+  },
+  {
+    name: "Inventure",
+    logo: "/assets/sponsors/Inventure.png",
+    url: "https://www.inventure.vc/",
+    tier: "supporter",
+  },
+  {
+    name: "HankenAI",
+    logo: "/assets/sponsors/HankAI.png",
+    url: "https://hankai.info/",
+    tier: "supporter",
+  }
 ];
 
 // Derived exports for convenience
