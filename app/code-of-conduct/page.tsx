@@ -20,7 +20,7 @@ export default function CodeOfConductPage() {
             <div className="prose prose-invert prose-neutral max-w-none">
               <p className="text-xl text-neutral-300 leading-relaxed mb-8">
                 Since AI is committed to providing a safe, inclusive, and welcoming environment for all members 
-                of our community. With 500+ members across Finland and beyond, we maintain these standards to 
+                of our community. With 1000+ members across Finland and beyond, we maintain these standards to 
                 ensure everyone can participate, learn, and collaborate effectively.
               </p>
 

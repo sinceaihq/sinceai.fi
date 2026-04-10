@@ -4,7 +4,7 @@ import { getOrganizationSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "About Since AI - Finland's Largest AI Developer Community | Turku",
   description:
-    "Since AI is Europe's AI builders community with 500+ members based in Turku. Founded in 2025, we launched with our flagship hackathon bringing 260 builders together at EduCity. Registered non-profit (Since AI ry).",
+    "Since AI is Europe's AI builders community with 1000+ members based in Turku. Founded in 2025, we launched with our flagship hackathon bringing 260 builders together at EduCity. Registered non-profit (Since AI ry).",
   keywords: [
     "Since AI",
     "about",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Since AI - Finland's Largest AI Developer Community",
     description:
-      "Since AI is Finland's largest AI community with 500+ members. We organize hackathons bringing 200+ developers and 15+ companies together in Turku.",
+      "Since AI is Finland's largest AI community with 1000+ members. We organize hackathons bringing 200+ developers and 15+ companies together in Turku.",
     type: "website",
     locale: "en_US",
     siteName: "Since AI",

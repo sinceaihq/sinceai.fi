@@ -36,7 +36,7 @@ export const ContactFAQ: React.FC<ContactFAQProps> = ({
     },
     {
       question: "How do I join the community?",
-      answer: "Join our Discord or Telegram for free! You'll get access to member-only channels, our job board, networking events, and updates about upcoming hackathons. It's the best way to connect with 500+ AI developers, founders, and enthusiasts.",
+      answer: "Join our Discord or Telegram for free! You'll get access to member-only channels, our job board, networking events, and updates about upcoming hackathons. It's the best way to connect with 1000+ AI developers, founders, and enthusiasts.",
       link: {
         text: "Join Discord",
         href: discordUrl,
@@ -45,7 +45,7 @@ export const ContactFAQ: React.FC<ContactFAQProps> = ({
     },
     // {
     //   question: "Can I post a job opportunity?",
-    //   answer: "Yes! Companies can post jobs to our community job board through Discord, or you can sponsor the hackathon for dedicated recruiting access. We have 500+ AI-focused developers, designers, and founders in our community looking for their next opportunity.",
+    //   answer: "Yes! Companies can post jobs to our community job board through Discord, or you can sponsor the hackathon for dedicated recruiting access. We have 1000+ AI-focused developers, designers, and founders in our community looking for their next opportunity.",
     //   link: {
     //     text: "Email us about job postings",
     //     href: "mailto:info@sinceai.fi?subject=Job%20Posting%20Inquiry",

@@ -25,7 +25,7 @@ export default function NewsletterSignup() {
         Stay Updated
       </h3>
       <p className="text-neutral-400 text-sm leading-relaxed mb-8">
-        Join 500+ AI developers. Get monthly updates on hackathons, production
+        Join 1000+ AI developers. Get monthly updates on hackathons, production
         guides, and European AI projects.
       </p>
 

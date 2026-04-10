@@ -11,7 +11,7 @@ import { ORG } from "@/lib/org";
 export const metadata: Metadata = {
   title: "Europe AI Community | Since AI - Continental AI Network",
   description:
-    "Join Europe's leading AI community. 500+ developers from Finland to France, Germany to Greece. Production-focused AI hackathons, real company projects, and European AI sovereignty.",
+    "Join Europe's leading AI community. 1000+ developers from Finland to France, Germany to Greece. Production-focused AI hackathons, real company projects, and European AI sovereignty.",
   keywords:
     "europe ai community, european ai developers, ai community europe, europe hackathon, european ai, ai europe, pan-european ai",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Europe AI Community | Since AI - Continental AI Network",
     description:
-      "Join Europe's leading AI community. 500+ developers across the continent building production AI systems.",
+      "Join Europe's leading AI community. 1000+ developers across the continent building production AI systems.",
     url: "https://sinceai.fi/europe-ai",
     siteName: "Since AI",
     type: "website",
@@ -52,7 +52,7 @@ export default function EuropeAIPage() {
             <div className="prose prose-invert prose-neutral max-w-none">
               <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed mb-8">
                 Since AI is Europe&apos;s only full-lifecycle AI innovation ecosystem,
-                connecting 500+ developers across the continent to build production AI
+                connecting 1000+ developers across the continent to build production AI
                 systems and advance European AI sovereignty.
               </p>
 
@@ -207,7 +207,7 @@ export default function EuropeAIPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">For Developers</h3>
                     <ul className="space-y-2 text-neutral-400">
-                      <li>&bull; Connect with 500+ European AI builders</li>
+                      <li>&bull; Connect with 1000+ European AI builders</li>
                       <li>&bull; Work on real company challenges (remote-friendly)</li>
                       <li>&bull; Production deployment support — not just demos</li>
                       <li>&bull; Access European job and startup opportunities</li>
@@ -324,7 +324,7 @@ export default function EuropeAIPage() {
                   Build Europe&apos;s AI Future
                 </h2>
                 <p className="text-neutral-300 mb-6">
-                  Connect with 500+ European AI developers, work on real projects, and
+                  Connect with 1000+ European AI developers, work on real projects, and
                   contribute to European AI sovereignty.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">

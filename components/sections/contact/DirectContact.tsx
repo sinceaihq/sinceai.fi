@@ -32,7 +32,7 @@ export const DirectContact: React.FC<DirectContactProps> = ({
     {
       icon: FaDiscord,
       title: "Discord",
-      description: "Join 500+ AI builders",
+      description: "Join 1000+ AI builders",
       value: "Join our server",
       href: discordUrl,
       external: true,

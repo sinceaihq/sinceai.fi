@@ -22,7 +22,7 @@ export default function FAQPage() {
       questions: [
         {
           q: "What is Since AI?",
-          a: "Since AI is Europe's only full-lifecycle AI innovation ecosystem with 500+ members, based in Turku, Finland. Unlike traditional hackathon organizers, we support AI projects from challenge ideation through hackathon building to production deployment and commercialization. Founded in 2025, our flagship hackathon brought together 260 builders who produced 30+ AI projects, many of which were subsequently deployed to production at partner companies.",
+          a: "Since AI is Europe's only full-lifecycle AI innovation ecosystem with 1000+ members, based in Turku, Finland. Unlike traditional hackathon organizers, we support AI projects from challenge ideation through hackathon building to production deployment and commercialization. Founded in 2025, our flagship hackathon brought together 260 builders who produced 30+ AI projects, many of which were subsequently deployed to production at partner companies.",
         },
         {
           q: "Where is Since AI based?",
@@ -39,7 +39,7 @@ export default function FAQPage() {
       questions: [
         {
           q: "How do I join the community?",
-          a: "Join our Discord server for free at discord.gg/6PC74zW68v. You'll get access to member-only channels, job board, event updates, technical discussions, and networking opportunities with 500+ AI developers and founders.",
+          a: "Join our Discord server for free at discord.gg/6PC74zW68v. You'll get access to member-only channels, job board, event updates, technical discussions, and networking opportunities with 1000+ AI developers and founders.",
         },
         {
           q: "What happens at Since AI hackathons?",
@@ -64,7 +64,7 @@ export default function FAQPage() {
         },
         {
           q: "What do partners get?",
-          a: "Partners get direct access to 500+ AI developers through hackathon challenges, recruiting events, logo placement, speaking opportunities, and Discord job board access. 80% of our partner companies have hired developers from our community. We can provide custom packages based on your hiring or brand goals.",
+          a: "Partners get direct access to 1000+ AI developers through hackathon challenges, recruiting events, logo placement, speaking opportunities, and Discord job board access. 80% of our partner companies have hired developers from our community. We can provide custom packages based on your hiring or brand goals.",
         },
         {
           q: "How much does partnership cost?",
@@ -186,7 +186,7 @@ export default function FAQPage() {
             </h1>
             
             <p className="text-xl text-neutral-400 leading-relaxed mb-12">
-              Everything you need to know about Since AI, Finland&apos;s largest AI community with 500+ members 
+              Everything you need to know about Since AI, Finland&apos;s largest AI community with 1000+ members 
               based in Turku. Can&apos;t find your answer?{" "}
               <Link href="/contact" className="text-white hover:text-neutral-300 underline">
                 Contact our team
@@ -205,7 +205,7 @@ export default function FAQPage() {
                 </div>
                 <div>
                   <dt className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-1">Community</dt>
-                  <dd className="text-neutral-300">500+ members (builders, researchers, founders)</dd>
+                  <dd className="text-neutral-300">1000+ members (builders, researchers, founders)</dd>
                 </div>
                 <div>
                   <dt className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-1">Focus</dt>

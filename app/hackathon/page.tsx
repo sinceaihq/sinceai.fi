@@ -165,7 +165,7 @@ const whyCards = [
   },
   {
     title: "Build Your European Network",
-    text: "Join 500+ Since AI community members across Europe. Past participants have been hired, founded startups, and built lasting professional connections.",
+    text: "Join 1000+ Since AI community members across Europe. Past participants have been hired, founded startups, and built lasting professional connections.",
   },
   {
     title: "Ship Real AI Products",
@@ -307,7 +307,7 @@ export default function HackathonPage() {
                 <p>
                   Since AI Hackathon is the flagship annual event organized by
                   Since AI — the leading AI builders community in Europe, based
-                  in Turku, Finland. Founded in 2025, Since AI has grown to 500+
+                  in Turku, Finland. Founded in 2025, Since AI has grown to 1000+
                   members across Europe with partners including Valmet, Sandvik,
                   Kongsberg, and the University of Turku.
                 </p>

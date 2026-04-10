@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Press & Media - Since AI | Finland's Largest AI Community",
   description:
-    "Press kit and media information for Since AI. 500+ members, 260 hackathon participants, 15+ partner companies. Contact: info@sinceai.fi. Based in Turku, Finland. Founded 2025.",
+    "Press kit and media information for Since AI. 1000+ members, 260 hackathon participants, 15+ partner companies. Contact: info@sinceai.fi. Based in Turku, Finland. Founded 2025.",
   keywords: [
     "Since AI press",
     "AI community media",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Press & Media - Since AI",
     description:
-      "Press kit and media information for Since AI, Finland's largest AI community with 500+ members.",
+      "Press kit and media information for Since AI, Finland's largest AI community with 1000+ members.",
     type: "website",
     locale: "en_US",
     siteName: "Since AI",

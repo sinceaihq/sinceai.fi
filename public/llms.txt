@@ -1,6 +1,6 @@
 # Since AI
 
-> Since AI is Europe's only full-lifecycle AI innovation ecosystem with 500+ members, based in Turku, Finland. We support AI projects from challenge ideation through hackathon building to production deployment and commercialization.
+> Since AI is Europe's only full-lifecycle AI innovation ecosystem with 1000+ members, based in Turku, Finland. We support AI projects from challenge ideation through hackathon building to production deployment and commercialization.
 
 ## About
 
@@ -9,7 +9,7 @@ Since AI (Since AI ry, business ID 3593920-2) is a registered non-profit organiz
 - Website: https://sinceai.fi
 - Type: Full-lifecycle AI innovation ecosystem
 - Location: Turku, Finland
-- Members: 500+
+- Members: 1000+
 - Hackathon Participants: 260+
 - Projects Shipped: 30+
 - Partners: 15+

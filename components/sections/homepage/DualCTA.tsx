@@ -30,7 +30,7 @@ export function DualCTA({ discordUrl }: DualCTAProps) {
                   For Companies
                 </h2>
                 <p className="text-base text-neutral-400 leading-relaxed">
-                  Recruit top AI talent, sponsor challenges, and build your brand with 500+ builders.
+                  Recruit top AI talent, sponsor challenges, and build your brand with 1000+ builders.
                 </p>
               </div>
               
@@ -61,7 +61,7 @@ export function DualCTA({ discordUrl }: DualCTAProps) {
                   For Builders
                 </h2>
                 <p className="text-base text-neutral-400 leading-relaxed">
-                  Join 500+ AI builders in hackathons, meetups, and workshops. Ship real projects.
+                  Join 1000+ AI builders in hackathons, meetups, and workshops. Ship real projects.
                 </p>
               </div>
               

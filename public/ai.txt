@@ -14,7 +14,7 @@ building to production deployment and commercialization.
 - Type: Full-Lifecycle AI Innovation Ecosystem
 - Founded: 2025
 - Location: Turku, Finland
-- Community: 500+ developers, researchers, builders
+- Community: 1000+ developers, researchers, builders
 - Scope: Europe + Global
 - Business ID: 3593920-2
 
@@ -27,7 +27,7 @@ building to production deployment and commercialization.
 6. Co-create challenges with companies (not just accept them)
 
 # Statistics (February 2026)
-- Active Members: 500+
+- Active Members: 1000+
 - Hackathon Participants: 260+
 - Projects Shipped: 30+
 - Industry Partners: 15+

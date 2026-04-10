@@ -8,7 +8,7 @@ import { Download, Mail } from "lucide-react";
 
 export default function PressPage() {
   const stats = [
-    { label: "Community Members", value: "500+" },
+    { label: "Community Members", value: "1000+" },
     { label: "Hackathon Participants", value: "200+" },
     { label: "Partner Companies", value: "15+" },
     { label: "AI Projects Built", value: "30+" },
@@ -34,7 +34,7 @@ export default function PressPage() {
             
             <div className="prose prose-invert prose-neutral max-w-none">
               <p className="text-xl text-neutral-300 leading-relaxed mb-8">
-                Since AI is Europe&apos;s only full-lifecycle AI innovation ecosystem with 500+ members,
+                Since AI is Europe&apos;s only full-lifecycle AI innovation ecosystem with 1000+ members,
                 based in Turku, Finland. We support AI projects from challenge ideation through hackathon
                 building to production deployment and commercialization.
               </p>
@@ -134,7 +134,7 @@ export default function PressPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>
-                    <span>Grew community from 0 to 500+ members in 18 months</span>
+                    <span>Grew community from 0 to 1000+ members in 18 months</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>
@@ -205,7 +205,7 @@ export default function PressPage() {
                   >
                     <strong>Discord</strong>
                     <br />
-                    <span className="text-sm text-neutral-500">500+ members</span>
+                    <span className="text-sm text-neutral-500">1000+ members</span>
                   </a>
                   <a
                     href="https://t.me/sinceaihq"
@@ -329,7 +329,7 @@ export default function PressPage() {
                     <p className="text-neutral-300 leading-relaxed italic">
                       Since AI is Europe&apos;s leading AI innovation ecosystem based in Turku, Finland.
                       We provide end-to-end support from challenge ideation through hackathon building
-                      to production deployment and commercialization. With 500+ members and 15+ partner
+                      to production deployment and commercialization. With 1000+ members and 15+ partner
                       companies including Valmet, Sandvik, and Kongsberg, we&apos;re building Europe&apos;s AI future.
                     </p>
                   </div>
@@ -339,7 +339,7 @@ export default function PressPage() {
                     <p className="text-neutral-300 leading-relaxed italic">
                       Since AI is Europe&apos;s only full-lifecycle AI innovation ecosystem, founded in 2025
                       in Turku, Finland. Unlike traditional hackathons, we support projects from challenge
-                      ideation through production deployment to commercialization. With 500+ developers,
+                      ideation through production deployment to commercialization. With 1000+ developers,
                       researchers, and builders, we&apos;ve shipped 30+ AI projects with partner companies including
                       Valmet, Sandvik, Kongsberg, and ElevenLabs. Our unique approach includes post-hackathon
                       production support (8+ weeks), entrepreneurship assistance through Antler partnership,
@@ -352,7 +352,7 @@ export default function PressPage() {
                     <h3 className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-3">Long (150 words)</h3>
                     <p className="text-neutral-300 leading-relaxed italic">
                       Since AI is Europe&apos;s premier AI innovation ecosystem, transforming how AI research
-                      becomes commercial reality. Founded in 2025 in Turku, Finland, we serve 500+ developers,
+                      becomes commercial reality. Founded in 2025 in Turku, Finland, we serve 1000+ developers,
                       researchers, and builders across Europe and beyond. Our unique full-lifecycle approach
                       supports projects from challenge ideation (working with companies to design viable
                       challenges) through intensive 72-hour hackathons to production deployment (8+ weeks

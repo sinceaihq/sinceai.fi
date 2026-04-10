@@ -293,7 +293,7 @@ export default function ProjectsPage() {
                 Build with the Best
               </h3>
               <p className="text-lg text-neutral-400 mb-8 max-w-xl mx-auto">
-                Join 500+ AI builders or partner with Since AI for your next challenge.
+                Join 1000+ AI builders or partner with Since AI for your next challenge.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

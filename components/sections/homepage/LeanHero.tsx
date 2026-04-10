@@ -72,7 +72,7 @@ export function LeanHero({ discordUrl }: LeanHeroProps) {
         >
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-            500+ members
+            1000+ members
           </span>
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />

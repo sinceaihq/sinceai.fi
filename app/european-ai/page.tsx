@@ -61,7 +61,7 @@ export default function EuropeanAIPage() {
               </p>
 
               <p className="text-lg text-neutral-400 leading-relaxed mb-12">
-                Our community of 500+ AI developers, researchers, and builders actively contributes to
+                Our community of 1000+ AI developers, researchers, and builders actively contributes to
                 open-source projects that advance European AI sovereignty, privacy, and independence.
               </p>
 

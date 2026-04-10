@@ -47,7 +47,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
             <p>
-              Since AI brings together <strong className="text-white font-semibold">500+ AI builders, researchers, and founders</strong> across Europe — and we&apos;re building the next bridge to the world&apos;s best talent from places like Stanford, Tsinghua, and top labs in China and the US.
+              Since AI brings together <strong className="text-white font-semibold">1000+ AI builders, researchers, and founders</strong> across Europe — and we&apos;re building the next bridge to the world&apos;s best talent from places like Stanford, Tsinghua, and top labs in China and the US.
             </p>
             <p className="text-neutral-400">
               We run high-signal hackathons, meetups, and builder programs where teams ship real AI products: <span className="text-neutral-300">code, demos, deployments, and measurable outcomes</span> — in collaboration with partner companies that bring real-world problems and hiring opportunities.
@@ -63,7 +63,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           >
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-              500+ members
+              1000+ members
             </span>
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />

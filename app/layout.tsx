@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sinceai.fi"),
   title: "Since AI - Europe's Leading AI Builders Community | AI Hackathons & Developer Events",
   description:
-    "Join 500+ AI developers in Europe's most active AI builders community. Hackathons, meetups, and real AI projects in Turku, Finland — globally connected. Build, learn, and ship AI products with top developers.",
+    "Join 1000+ AI developers in Europe's most active AI builders community. Hackathons, meetups, and real AI projects in Turku, Finland — globally connected. Build, learn, and ship AI products with top developers.",
   keywords: [
     "AI community",
     "AI hackathon",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Since AI - Europe's Leading AI Builders Community",
     description:
-      "500+ AI developers building real AI products. Hackathons, meetups, and community in Turku, Finland — globally connected.",
+      "1000+ AI developers building real AI products. Hackathons, meetups, and community in Turku, Finland — globally connected.",
     url: "https://sinceai.fi",
     siteName: "Since AI",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     creator: "@sinceaihq",
     title: "Since AI - Europe's Leading AI Builders Community",
     description:
-      "500+ AI developers building real AI products. Hackathons, meetups, and community in Turku, Finland.",
+      "1000+ AI developers building real AI products. Hackathons, meetups, and community in Turku, Finland.",
     images: ["/assets/logo/SINCE AI full black.png"],
   },
   robots: {

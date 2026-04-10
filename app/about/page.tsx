@@ -44,7 +44,7 @@ export default function AboutPage() {
             <div className="prose prose-invert prose-neutral max-w-none">
               <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed mb-8">
                 Since AI is Europe&apos;s only full-lifecycle AI innovation ecosystem — not just a hackathon organizer
-                or developer meetup. With 500+ members based in Turku, Finland, we support AI projects from challenge
+                or developer meetup. With 1000+ members based in Turku, Finland, we support AI projects from challenge
                 ideation through production deployment to commercialization.{" "}
                 {COPY.foundingLineShort}
               </p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-1">Community</dt>
-                    <dd className="text-neutral-300">500+ members (builders, researchers, founders)</dd>
+                    <dd className="text-neutral-300">1000+ members (builders, researchers, founders)</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-1">Focus</dt>
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
                     <div className="text-sm text-neutral-500">Community Members</div>
                   </div>
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
@@ -269,13 +269,13 @@ export default function AboutPage() {
                     <p className="text-neutral-400 leading-relaxed">
                       Work on real AI challenges with business impact. Learn production AI development, not just tutorials.
                       Build a portfolio with deployed, working systems. Access a path to entrepreneurship and connect
-                      with 500+ like-minded AI builders.
+                      with 1000+ like-minded AI builders.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">For Companies</h3>
                     <p className="text-neutral-400 leading-relaxed">
-                      End-to-end innovation support from ideation to production. Access 500+ AI developers and researchers.
+                      End-to-end innovation support from ideation to production. Access 1000+ AI developers and researchers.
                       Get production-ready solutions, not just proof-of-concepts. Ongoing technical support after the hackathon
                       and a direct talent pipeline for hiring.
                     </p>
@@ -368,7 +368,7 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>
-                    <span><strong className="text-white">Community Channels:</strong> Join 500+ members in our Discord and Telegram channels, sharing knowledge, job opportunities, and collaborating on projects.</span>
+                    <span><strong className="text-white">Community Channels:</strong> Join 1000+ members in our Discord and Telegram channels, sharing knowledge, job opportunities, and collaborating on projects.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">•</span>

@@ -11,7 +11,7 @@ import { partnerCompanies, supportingPartners } from "@/lib/partners";
 
 export default function PartnersPage() {
   const stats = [
-    { value: "500+", label: "AI Developers", description: "In our Discord community" },
+    { value: "1000+", label: "AI Developers", description: "In our Discord community" },
     { value: "200+", label: "Hackathon Participants", description: "Per major event" },
     { value: "80%", label: "Placement Rate", description: "Partners hired our members" },
     { value: "30+", label: "Projects Built", description: "Real AI solutions delivered" },
@@ -21,11 +21,11 @@ export default function PartnersPage() {
     {
       icon: Users,
       title: "Access Top AI Talent",
-      description: "Connect with 500+ AI developers, ML engineers, researchers, and founders. 80% of our partner companies have successfully hired from our community.",
+      description: "Connect with 1000+ AI developers, ML engineers, researchers, and founders. 80% of our partner companies have successfully hired from our community.",
       outcomes: [
         "Direct access to pre-vetted developers",
         "Recruiting events with 200+ attendees",
-        "Job board access for 500+ Discord members",
+        "Job board access for 1000+ Discord members",
         "Resume database from hackathon participants",
       ],
     },
@@ -43,7 +43,7 @@ export default function PartnersPage() {
     {
       icon: Megaphone,
       title: "Build Brand Awareness",
-      description: "Position your company as an AI innovation leader. Reach 500+ developers through hackathons, social media, and community engagement.",
+      description: "Position your company as an AI innovation leader. Reach 1000+ developers through hackathons, social media, and community engagement.",
       outcomes: [
         "Logo placement on website & materials",
         "Social media mentions (3,000+ reach)",
@@ -164,7 +164,7 @@ export default function PartnersPage() {
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
-                Access 500+ AI Developers.
+                Access 1000+ AI Developers.
                 <br />
                 <span className="bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">
                   Build Real Solutions.

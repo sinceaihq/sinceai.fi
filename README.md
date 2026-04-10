@@ -98,7 +98,7 @@ Every component is built with performance, accessibility, and type safety in min
 
 ## Community
 
-500+ AI developers, ML engineers, and researchers. Discord community open to anyone building with AI.
+1000+ AI developers, ML engineers, and researchers. Discord community open to anyone building with AI.
 
 ---
 

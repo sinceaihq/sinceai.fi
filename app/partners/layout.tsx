@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { getOrganizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Partner With Since AI - Access 500+ AI Developers | Turku, Finland",
+  title: "Partner With Since AI - Access 1000+ AI Developers | Turku, Finland",
   description:
-    "Partner with Since AI to recruit AI talent, solve technical challenges, and build brand awareness. 500+ developers, 200+ hackathon participants, 80% placement rate. Partners: Valmet, Sandvik, Kongsberg, ElevenLabs, Antler.",
+    "Partner with Since AI to recruit AI talent, solve technical challenges, and build brand awareness. 1000+ developers, 200+ hackathon participants, 80% placement rate. Partners: Valmet, Sandvik, Kongsberg, ElevenLabs, Antler.",
   keywords: [
     "Since AI partnership",
     "AI talent recruitment",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "/partners",
   },
   openGraph: {
-    title: "Partner With Since AI - Access 500+ AI Developers",
+    title: "Partner With Since AI - Access 1000+ AI Developers",
     description:
       "Recruit AI talent, solve technical challenges, and build brand awareness. 80% of partners hired from our community.",
     type: "website",

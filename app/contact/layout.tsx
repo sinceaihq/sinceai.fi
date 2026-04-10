@@ -4,7 +4,7 @@ import { getFAQSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact Since AI - Partnerships, Sponsorships, Community",
   description:
-    "Get in touch with Since AI. Partner with us, sponsor the next hackathon, or join our community of 500+ AI developers.",
+    "Get in touch with Since AI. Partner with us, sponsor the next hackathon, or join our community of 1000+ AI developers.",
   keywords: [
     "Since AI",
     "contact",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Since AI - Partnerships, Sponsorships, Community",
     description:
-      "Get in touch with Since AI. Partner with us, sponsor the next hackathon, or join our community of 500+ AI developers.",
+      "Get in touch with Since AI. Partner with us, sponsor the next hackathon, or join our community of 1000+ AI developers.",
     type: "website",
     locale: "en_US",
     siteName: "Since AI",
@@ -46,7 +46,7 @@ const faqData = [
   },
   {
     question: "How do I join the community?",
-    answer: "Join our Discord server for free! You'll get access to member-only channels, our job board, networking events, and updates about upcoming hackathons. It's the best way to connect with 500+ AI developers, founders, and enthusiasts.",
+    answer: "Join our Discord server for free! You'll get access to member-only channels, our job board, networking events, and updates about upcoming hackathons. It's the best way to connect with 1000+ AI developers, founders, and enthusiasts.",
   },
   {
     question: "What's the best way to reach you?",

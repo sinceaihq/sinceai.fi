@@ -12,7 +12,7 @@ import { FIRST_EVENT, UPCOMING_EVENT_2026 } from "@/lib/sinceai";
 export const metadata: Metadata = {
   title: "AI Community in Turku, Finland | Since AI",
   description:
-    "Join Turku's premier AI community. 500+ developers, AI hackathons with real company challenges, production deployment support. Turku is Finland's rising AI development hub.",
+    "Join Turku's premier AI community. 1000+ developers, AI hackathons with real company challenges, production deployment support. Turku is Finland's rising AI development hub.",
   keywords:
     "turku ai, ai turku, turku ai community, turku hackathon, ai developers turku, turku tech, turku finland ai",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Community in Turku, Finland | Since AI",
     description:
-      "Join Turku's premier AI community. 500+ developers, AI hackathons with real company challenges, production deployment support.",
+      "Join Turku's premier AI community. 1000+ developers, AI hackathons with real company challenges, production deployment support.",
     url: "https://sinceai.fi/turku",
     siteName: "Since AI",
     type: "website",
@@ -53,7 +53,7 @@ export default function TurkuPage() {
             <div className="prose prose-invert prose-neutral max-w-none">
               <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed mb-8">
                 Turku is rapidly emerging as Finland&apos;s AI development powerhouse, and
-                Since AI is at the forefront of this transformation. With 500+ members,
+                Since AI is at the forefront of this transformation. With 1000+ members,
                 regular hackathons, and deep university partnerships, Turku offers unique
                 advantages for AI builders.
               </p>
@@ -67,7 +67,7 @@ export default function TurkuPage() {
                   While Helsinki dominates headlines, Turku has quietly built one of
                   Finland&apos;s strongest AI ecosystems. With two major universities,
                   growing industrial AI adoption, and the Since AI community connecting
-                  500+ developers, Turku offers a focused, high-signal environment for
+                  1000+ developers, Turku offers a focused, high-signal environment for
                   AI builders.
                 </p>
                 <p className="text-neutral-400 leading-relaxed">
@@ -85,7 +85,7 @@ export default function TurkuPage() {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
                     <div className="text-sm text-neutral-500">Developers in network</div>
                   </div>
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
@@ -192,7 +192,7 @@ export default function TurkuPage() {
                   <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
                     <h4 className="text-base font-bold text-white mb-1">5. Active Community</h4>
                     <p className="text-neutral-400 text-sm leading-relaxed">
-                      Since AI connects 500+ developers through regular hackathons, meetups,
+                      Since AI connects 1000+ developers through regular hackathons, meetups,
                       and an active Discord community with real company challenges.
                     </p>
                   </div>
@@ -219,7 +219,7 @@ export default function TurkuPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">&bull;</span>
-                    <span>Access to 500+ AI developers across Europe</span>
+                    <span>Access to 1000+ AI developers across Europe</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">&bull;</span>
@@ -348,7 +348,7 @@ export default function TurkuPage() {
                   <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
                     <h3 className="text-base font-bold text-white mb-2">Tech Community</h3>
                     <ul className="text-neutral-400 text-sm space-y-1">
-                      <li>&bull; Since AI (500+ AI developers)</li>
+                      <li>&bull; Since AI (1000+ AI developers)</li>
                       <li>&bull; Various developer meetups</li>
                       <li>&bull; Turku Game Hub</li>
                       <li>&bull; Startup Turku ecosystem</li>

@@ -4,7 +4,7 @@ import { getFAQSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "FAQ - Frequently Asked Questions | Since AI",
   description:
-    "Answers to common questions about Since AI, Finland's largest AI community. Learn about hackathons, membership, partnerships, events, and how to get involved with 500+ AI developers in Turku.",
+    "Answers to common questions about Since AI, Finland's largest AI community. Learn about hackathons, membership, partnerships, events, and how to get involved with 1000+ AI developers in Turku.",
   keywords: [
     "Since AI FAQ",
     "AI community questions",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: "What is Since AI?",
-    answer: "Since AI is Europe's AI builders community with 500+ members, based in Turku. We organize hackathons and networking events that bring together AI developers, researchers, and companies. Founded in 2025, our flagship hackathon brought together 260 builders who produced 30+ AI projects.",
+    answer: "Since AI is Europe's AI builders community with 1000+ members, based in Turku. We organize hackathons and networking events that bring together AI developers, researchers, and companies. Founded in 2025, our flagship hackathon brought together 260 builders who produced 30+ AI projects.",
   },
   {
     question: "Where is Since AI based?",
@@ -43,7 +43,7 @@ const faqData = [
   },
   {
     question: "How do I join the community?",
-    answer: "Join our Discord server for free at discord.gg/6PC74zW68v. You'll get access to member-only channels, job board, event updates, technical discussions, and networking opportunities with 500+ AI developers and founders.",
+    answer: "Join our Discord server for free at discord.gg/6PC74zW68v. You'll get access to member-only channels, job board, event updates, technical discussions, and networking opportunities with 1000+ AI developers and founders.",
   },
   {
     question: "What sponsorship options are available?",

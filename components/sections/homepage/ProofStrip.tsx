@@ -7,7 +7,7 @@ import { FOUNDING_YEAR, FIRST_EVENT } from "@/lib/sinceai";
 export function ProofStrip() {
   const metrics = [
     { value: `${FOUNDING_YEAR}`, label: "Founded" },
-    { value: "500+", label: "Community Members" },
+    { value: "1000+", label: "Community Members" },
     { value: `${FIRST_EVENT.attendance}`, label: "Hackathon Builders" },
     { value: "30+", label: "Projects Shipped" },
   ];

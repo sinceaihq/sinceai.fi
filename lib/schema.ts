@@ -29,7 +29,7 @@ export function getOrganizationSchema(): WithContext<Organization> & Record<stri
       value: ORG.businessId,
     },
     description:
-      "Since AI is Europe's only full-lifecycle AI innovation ecosystem with 500+ members, based in Turku, Finland. Founded in 2025, we support AI projects from challenge ideation through 72-hour hackathons to production deployment and commercialization. Our flagship hackathon brought 260 builders together to ship 30+ AI projects with 15+ partner companies including Valmet, Sandvik, Kongsberg, and ElevenLabs. We provide 8+ weeks of post-hackathon production support, entrepreneurship assistance through Antler partnership, European AI sovereignty initiatives, and research-to-market bridges with universities.",
+      "Since AI is Europe's only full-lifecycle AI innovation ecosystem with 1000+ members, based in Turku, Finland. Founded in 2025, we support AI projects from challenge ideation through 72-hour hackathons to production deployment and commercialization. Our flagship hackathon brought 260 builders together to ship 30+ AI projects with 15+ partner companies including Valmet, Sandvik, Kongsberg, and ElevenLabs. We provide 8+ weeks of post-hackathon production support, entrepreneurship assistance through Antler partnership, European AI sovereignty initiatives, and research-to-market bridges with universities.",
     address: {
       '@type': 'PostalAddress',
       addressLocality: ORG.location.city,

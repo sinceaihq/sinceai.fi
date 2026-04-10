@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Statistics & Impact — Since AI Community Metrics | Since AI",
   description:
-    "Since AI impact data: 500+ members, 260+ hackathon participants, 30+ AI projects shipped, 15+ partner companies. Updated February 2026. Europe's leading AI innovation ecosystem.",
+    "Since AI impact data: 1000+ members, 260+ hackathon participants, 30+ AI projects shipped, 15+ partner companies. Updated February 2026. Europe's leading AI innovation ecosystem.",
   keywords: [
     "Since AI statistics",
     "AI community impact",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Statistics & Impact | Since AI",
     description:
-      "500+ members, 260+ hackathon builders, 30+ projects shipped, 15+ partners. Real metrics from Europe's leading AI innovation ecosystem.",
+      "1000+ members, 260+ hackathon builders, 30+ projects shipped, 15+ partners. Real metrics from Europe's leading AI innovation ecosystem.",
     url: "https://sinceai.fi/stats",
     type: "website",
   },
@@ -68,7 +68,7 @@ export default function StatsPage() {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="p-6 rounded-xl border border-white/10 bg-white/[0.02] text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
                     <div className="text-sm text-neutral-500">Active Members</div>
                   </div>
                   <div className="p-6 rounded-xl border border-white/10 bg-white/[0.02] text-center">

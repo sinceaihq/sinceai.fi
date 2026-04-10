@@ -33,7 +33,7 @@ export const ORG = {
     reddit: "https://www.reddit.com/r/SinceAI/",
   },
   stats: {
-    members: "500+",
+    members: "1000+",
     hackathonParticipants: "200+",
     projects: "30+",
     partners: "15+",

@@ -11,7 +11,7 @@ import { ORG } from "@/lib/org";
 export const metadata: Metadata = {
   title: "Finland AI Community | Since AI - Nordic AI Excellence",
   description:
-    "Join Finland's leading AI developer community. 500+ members across Helsinki, Turku, Tampere, Oulu. AI hackathons, real company projects, production deployment support.",
+    "Join Finland's leading AI developer community. 1000+ members across Helsinki, Turku, Tampere, Oulu. AI hackathons, real company projects, production deployment support.",
   keywords:
     "finland ai, ai finland, finland ai community, finnish ai developers, ai hackathon finland, helsinki ai, turku ai, tampere ai",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finland AI Community | Since AI - Nordic AI Excellence",
     description:
-      "Join Finland's leading AI developer community. 500+ members across Helsinki, Turku, Tampere, Oulu.",
+      "Join Finland's leading AI developer community. 1000+ members across Helsinki, Turku, Tampere, Oulu.",
     url: "https://sinceai.fi/finland-ai",
     siteName: "Since AI",
     type: "website",
@@ -122,7 +122,7 @@ export default function FinlandAIPage() {
                   <div className="p-6 rounded-xl border border-white/10 bg-white/[0.03]">
                     <h3 className="text-xl font-bold text-white mb-3">Turku (Headquarters)</h3>
                     <ul className="text-neutral-400 text-sm space-y-2">
-                      <li>&bull; 500+ member community base</li>
+                      <li>&bull; 1000+ member community base</li>
                       <li>&bull; Regular in-person hackathons</li>
                       <li>&bull; University partnerships (Turku, Turku AMK)</li>
                       <li>&bull; Industrial AI focus (Valmet, Sandvik)</li>
@@ -171,7 +171,7 @@ export default function FinlandAIPage() {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
                     <div className="text-sm text-neutral-500">Finnish AI developers</div>
                   </div>
                   <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02] text-center">
@@ -205,7 +205,7 @@ export default function FinlandAIPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">&bull;</span>
-                    <span><strong className="text-white">Online Community:</strong> Active Discord with 500+ members across Finland</span>
+                    <span><strong className="text-white">Online Community:</strong> Active Discord with 1000+ members across Finland</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-white font-bold mt-1">&bull;</span>
@@ -267,7 +267,7 @@ export default function FinlandAIPage() {
                 </h2>
                 <p className="text-neutral-300 mb-6">
                   Whether you&apos;re in Helsinki, Turku, Tampere, Oulu, or anywhere in Finland,
-                  connect with 500+ AI developers building real production systems.
+                  connect with 1000+ AI developers building real production systems.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
