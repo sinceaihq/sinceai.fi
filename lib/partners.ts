@@ -175,6 +175,12 @@ export const PARTNERS: Partner[] = [
     logo: "/assets/sponsors/HankAI.png",
     url: "https://hankai.info/",
     tier: "supporter",
+  },
+  {
+    name: "VES",
+    logo: "/assets/sponsors/ves.png",
+    url: "https://www.ves.fi",
+    tier: "supporter",
   }
 ];
 
