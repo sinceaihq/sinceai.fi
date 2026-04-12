@@ -23,7 +23,7 @@ interface ContactFAQProps {
 }
 
 export const ContactFAQ: React.FC<ContactFAQProps> = ({
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
   const faqs: FAQItem[] = [
     {

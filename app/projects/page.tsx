@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const config = {
-    discordUrl: "https://discord.gg/6PC74zW68v",
+    discordUrl: "https://discord.com/invite/YkqJswRGSW",
   };
 
   const industries = ["All", ...getIndustries()];

@@ -25,7 +25,7 @@ interface CommunityEngagementProps {
 }
 
 export const CommunityEngagement: React.FC<CommunityEngagementProps> = ({
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
   nextHackathonDate = "November 21-23, 2025",
   jobBoardUrl = "#jobs",
 }) => {

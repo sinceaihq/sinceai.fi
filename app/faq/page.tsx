@@ -226,7 +226,7 @@ export default function FAQPage() {
                 <div className="sm:col-span-2">
                   <dt className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-2">Official links</dt>
                   <dd className="flex flex-wrap gap-3">
-                    <a href="https://discord.gg/6PC74zW68v" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline">Discord</a>
+                    <a href="https://discord.com/invite/YkqJswRGSW" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline">Discord</a>
                     <a href="https://www.linkedin.com/company/sinceai" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline">LinkedIn</a>
                     <a href="https://github.com/sinceaihq" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline">GitHub</a>
                     <a href="https://x.com/sinceaihq" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white underline">X</a>
@@ -285,7 +285,7 @@ export default function FAQPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="https://discord.gg/6PC74zW68v"
+                  href="https://discord.com/invite/YkqJswRGSW"
                   target="_blank"
                   className="px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-neutral-100 transition-colors"
                 >
@@ -306,7 +306,7 @@ export default function FAQPage() {
           </motion.div>
         </div>
 
-        <Footer discordUrl="https://discord.gg/6PC74zW68v" />
+        <Footer discordUrl="https://discord.com/invite/YkqJswRGSW" />
       </main>
     </SmoothScroll>
   );

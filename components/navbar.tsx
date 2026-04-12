@@ -44,7 +44,7 @@ export const Navbar = () => {
   const links = {
     home: "/",
     hackathon: "/hackathon",
-    community: "https://discord.gg/6PC74zW68v",
+    community: "https://discord.com/invite/YkqJswRGSW",
     events: "/events",
     projects: "/projects",
     partners: "/partners",

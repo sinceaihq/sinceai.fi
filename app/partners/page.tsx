@@ -535,7 +535,7 @@ export default function PartnersPage() {
           </div>
         </section>
 
-        <Footer discordUrl="https://discord.gg/6PC74zW68v" />
+        <Footer discordUrl="https://discord.com/invite/YkqJswRGSW" />
       </main>
     </SmoothScroll>
   );

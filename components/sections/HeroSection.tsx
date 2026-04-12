@@ -8,7 +8,7 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
   return (
     <>

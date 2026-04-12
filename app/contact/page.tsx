@@ -189,7 +189,7 @@ const teamSections = [
 
 // Configuration
 const config = {
-  discordUrl: "https://discord.gg/6PC74zW68v",
+  discordUrl: "https://discord.com/invite/YkqJswRGSW",
 };
 
 // Team member type

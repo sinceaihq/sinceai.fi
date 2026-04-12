@@ -22,7 +22,7 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
   const socialLinks = [
     { name: "Discord", href: discordUrl, icon: FaDiscord },

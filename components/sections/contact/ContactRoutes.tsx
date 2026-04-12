@@ -20,7 +20,7 @@ interface ContactRoutesProps {
 export const ContactRoutes: React.FC<ContactRoutesProps> = ({
   onPartnerClick,
   onTeamClick,
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
   const routes: RouteCard[] = [
     {

@@ -79,7 +79,7 @@ const eventSchema = {
     "@type": "Organization",
     name: "Since AI",
     url: "https://sinceai.fi",
-    sameAs: ["https://discord.gg/6PC74zW68v", "https://t.me/sinceaihq"],
+    sameAs: ["https://discord.com/invite/YkqJswRGSW", "https://t.me/sinceaihq"],
   },
   sponsor: [
     { "@type": "Organization", name: "Valmet", url: "https://www.valmet.com" },
@@ -605,7 +605,7 @@ export default function HackathonPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <a
-                  href="https://discord.gg/6PC74zW68v"
+                  href="https://discord.com/invite/YkqJswRGSW"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-black bg-white rounded-full hover:bg-neutral-100 transition-all duration-300"
@@ -677,7 +677,7 @@ export default function HackathonPage() {
           </div>
         </section>
 
-        <Footer discordUrl="https://discord.gg/6PC74zW68v" />
+        <Footer discordUrl="https://discord.com/invite/YkqJswRGSW" />
       </main>
     </SmoothScroll>
   );

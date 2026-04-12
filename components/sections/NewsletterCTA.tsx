@@ -10,7 +10,7 @@ interface NewsletterCTAProps {
 }
 
 export const NewsletterCTA: React.FC<NewsletterCTAProps> = ({
-  discordUrl = "https://discord.gg/6PC74zW68v",
+  discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<

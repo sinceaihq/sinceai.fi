@@ -13,7 +13,7 @@ import { ORG } from "@/lib/org";
 
 export default function EventsPage() {
   const config = {
-    discordUrl: "https://discord.gg/6PC74zW68v",
+    discordUrl: "https://discord.com/invite/YkqJswRGSW",
     lumaOrgUrl: LINKS.lumaOrg, // General events/calendar page
     lumaHackathon2025Url: LINKS.lumaHackathon2025, // Specific 2025 event page
   };

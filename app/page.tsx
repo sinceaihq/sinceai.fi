@@ -31,7 +31,7 @@ export default function HomePage() {
   }, []);
 
   const config = {
-    discordUrl: "https://discord.gg/6PC74zW68v",
+    discordUrl: "https://discord.com/invite/YkqJswRGSW",
   };
 
   // Get top 2 challenge themes for spotlight (Kongsberg and Sandvik)
