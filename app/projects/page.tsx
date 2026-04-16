@@ -5,16 +5,13 @@ import SmoothScroll from "@/components/smoothScroll";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/Footer";
 import { motion } from "framer-motion";
-import { Search, Filter } from "lucide-react";
+import { Search } from "lucide-react";
 import {
-  challengeThemes,
   getIndustries,
   getModalities,
   getSponsors,
   filterChallengeThemes,
-  type ChallengeTheme,
 } from "@/lib/projects";
-import { FIRST_EVENT, UPCOMING_EVENT_2026 } from "@/lib/sinceai";
 
 export default function ProjectsPage() {
   const [selectedIndustry, setSelectedIndustry] = useState<string>("All");

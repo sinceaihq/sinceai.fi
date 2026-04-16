@@ -60,7 +60,7 @@ function LogoItem({
 export function PartnerMarquee() {
   return (
     <div className={styles.marqueeContainer}>
-      <span className={styles.marqueeLabel}>// backed by</span>
+      <span className={styles.marqueeLabel}>{'// backed by'}</span>
 
       <div className={styles.marqueeTrackWrapper}>
         <div className={styles.marqueeTrack}>

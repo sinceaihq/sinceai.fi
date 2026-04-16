@@ -24,6 +24,7 @@ export function TrustBar() {
                     key={`logo-${setNum}-${index}`}
                     className="logo-item"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={logo.logo}
                       alt={`${logo.name} logo`}

@@ -7,6 +7,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
     <>
       
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/assets/logo/SINCE AI white.png"
         className={className ? className : "w-auto h-[28px]"}

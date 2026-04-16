@@ -1,40 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { InView } from "@/components/motion-primitives/in-view";
-import { Magnetic } from "@/components/motion-primitives/magnetic";
-import {
-  Users,
-  Lightbulb,
-  Target,
-  Quote,
-  CheckCircle,
-  Loader2,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Users, Lightbulb, Target } from "lucide-react";
 
-interface SponsorSectionProps {
-  calendlyUrl?: string;
-  contactEmail?: string;
-}
-
-export const SponsorSection: React.FC<SponsorSectionProps> = ({
-  calendlyUrl = "https://calendly.com",
-  contactEmail = "partners@sinceai.fi",
-}) => {
-  const [formState, setFormState] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
-  const [formData, setFormData] = useState({
-    companyName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const springOptions = { bounce: 0.1 };
-
+export const SponsorSection: React.FC = () => {
   const valueProps = [
     {
       icon: <Users className="w-6 h-6" />,
@@ -61,33 +31,6 @@ export const SponsorSection: React.FC<SponsorSectionProps> = ({
       color: "group-hover:text-green-400",
     },
   ];
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState("loading");
-
-    // Simulate form submission - replace with actual API call
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      setFormState("success");
-      setFormData({
-        companyName: "",
-        contactName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    } catch {
-      setFormState("error");
-    }
-  };
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
 
   return (
     <section id="partner-section" className="py-32 md:py-40 px-6">

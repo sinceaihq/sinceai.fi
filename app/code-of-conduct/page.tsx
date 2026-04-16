@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+
 import SmoothScroll from "@/components/smoothScroll";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/Footer";

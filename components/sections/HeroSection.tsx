@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { TextLoop } from "@/components/motion-primitives/text-loop";
 
 interface HeroSectionProps {
   discordUrl?: string;

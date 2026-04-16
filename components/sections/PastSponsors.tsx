@@ -74,6 +74,7 @@ export const PastSponsors: React.FC<PastSponsorsProps> = ({
                 className="flex items-center justify-center p-4 rounded-2xl transition-all duration-300 min-w-[150px]"
                 aria-label={sponsor.alt}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={sponsor.src}
                   alt={sponsor.alt}
@@ -113,6 +114,7 @@ export const PastSponsors: React.FC<PastSponsorsProps> = ({
               className="flex items-center justify-center p-4 rounded-2xl transition-all duration-300"
               aria-label={support.alt}
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={support.src}
                 alt={support.alt}

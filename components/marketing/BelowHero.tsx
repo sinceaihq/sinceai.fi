@@ -462,7 +462,7 @@ export function BelowHero() {
                 marginBottom: "var(--space-sm)",
               }}
             >
-              // for builders
+              {'// for builders'}
             </p>
             <h3
               style={{
@@ -510,7 +510,7 @@ export function BelowHero() {
                 marginBottom: "var(--space-sm)",
               }}
             >
-              // for partners
+              {'// for partners'}
             </p>
             <h3
               style={{

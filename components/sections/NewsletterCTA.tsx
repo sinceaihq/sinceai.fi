@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import { InView } from "@/components/motion-primitives/in-view";
-import { Magnetic } from "@/components/motion-primitives/magnetic";
-import { Mail, CheckCircle, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 interface NewsletterCTAProps {
   discordUrl?: string;
@@ -12,44 +10,7 @@ interface NewsletterCTAProps {
 export const NewsletterCTA: React.FC<NewsletterCTAProps> = ({
   discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const springOptions = { bounce: 0.1 };
-
-  const validateEmail = (email: string) => {
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(email);
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!validateEmail(email)) {
-      setErrorMessage("Please enter a valid email address");
-      setStatus("error");
-      return;
-    }
-
-    setStatus("loading");
-    setErrorMessage("");
-
-    // Simulate API call - replace with actual newsletter service integration
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      setStatus("success");
-      setEmail("");
-
-      // Optionally redirect to Discord after success
-      // setTimeout(() => window.open(discordUrl, "_blank"), 2000);
-    } catch {
-      setErrorMessage("Something went wrong. Please try again.");
-      setStatus("error");
-    }
-  };
+  const [loading] = useState(false);
 
   return (
     <section className="py-32 md:py-40 px-6">
@@ -78,10 +39,10 @@ export const NewsletterCTA: React.FC<NewsletterCTAProps> = ({
               <button
                 type="button"
                 onClick={() => window.open(discordUrl, "_blank")}
-                disabled={status === "loading"}
+                disabled={loading}
                 className="group relative inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-black bg-white rounded-full transition-all duration-500 hover:bg-neutral-100 hover:scale-[1.02] transform disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === "loading" ? (
+                {loading ? (
                   <Loader2 className="w-5 h-5 animate-spin" />
                 ) : (
                   "Join Community"

@@ -610,7 +610,6 @@ function SidebarMenuSkeleton({
   
   React.useEffect(() => {
     // Generate random width after hydration to avoid SSR mismatch
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setWidth(`${Math.floor(Math.random() * 40) + 50}%`)
   }, [])
 

@@ -94,6 +94,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                     key={item.name}
                     className="flex items-center justify-center h-16 w-40 opacity-40 hover:opacity-100 transition-all duration-500 group"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.logo}
                       alt={`${item.name} logo — Since AI hackathon partner`}

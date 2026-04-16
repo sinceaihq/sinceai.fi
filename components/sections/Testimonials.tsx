@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InView } from "@/components/motion-primitives/in-view";
-import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ParticipantTestimonial {
   type: "participant";
@@ -79,7 +79,6 @@ export const Testimonials: React.FC<TestimonialsProps> = ({
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const participantTestimonials = testimonials.filter((t) => t.type === "participant") as ParticipantTestimonial[];
-  const partnerTestimonials = testimonials.filter((t) => t.type === "partner") as PartnerTestimonial[];
 
   const nextSlide = () => {
     setActiveIndex((prev) => (prev + 1) % participantTestimonials.length);

@@ -18,7 +18,6 @@ interface ContactRoutesProps {
 }
 
 export const ContactRoutes: React.FC<ContactRoutesProps> = ({
-  onPartnerClick,
   onTeamClick,
   discordUrl = "https://discord.com/invite/YkqJswRGSW",
 }) => {
@@ -59,18 +58,6 @@ export const ContactRoutes: React.FC<ContactRoutesProps> = ({
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
       },
     },
   };

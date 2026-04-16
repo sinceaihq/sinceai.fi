@@ -33,8 +33,6 @@ export const ValuePropsSection: React.FC = () => {
     },
   ];
 
-  const iconColors = ["text-blue-400", "text-purple-400", "text-green-400"];
-
   return (
     <section className="py-32 md:py-40 px-6">
       <div className="max-w-7xl mx-auto">

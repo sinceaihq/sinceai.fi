@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { getFirstEventSchema, getUpcoming2026EventSchema } from "@/lib/schema";
-import { FIRST_EVENT, UPCOMING_EVENT_2026, COPY } from "@/lib/sinceai";
+import { FIRST_EVENT, COPY } from "@/lib/sinceai";
 
 export const metadata: Metadata = {
   title:

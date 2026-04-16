@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Clock, Mail } from "lucide-react";
+import { Clock } from "lucide-react";
 
 export const ResponseTime: React.FC = () => {
   return (

@@ -180,7 +180,7 @@ export default function HackathonPage() {
                 marginBottom: "var(--space-sm)",
               }}
             >
-              // flagship event
+              {'// flagship event'}
             </p>
 
             <h1
@@ -269,7 +269,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // what is it
+              {'// what is it'}
             </p>
             <h2
               style={{
@@ -320,7 +320,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "1200px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // why participate
+              {'// why participate'}
             </p>
             <h2
               style={{
@@ -394,7 +394,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // key facts
+              {'// key facts'}
             </p>
             <h2
               style={{
@@ -458,7 +458,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "1200px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // venue
+              {'// venue'}
             </p>
             <h2
               style={{
@@ -529,7 +529,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "1200px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // challenge partners
+              {'// challenge partners'}
             </p>
             <h2
               style={{
@@ -638,7 +638,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // previous editions
+              {'// previous editions'}
             </p>
             <h2
               style={{
@@ -710,7 +710,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // mlh partnership
+              {'// mlh partnership'}
             </p>
             <h2
               style={{
@@ -789,7 +789,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // registrations
+              {'// registrations'}
             </p>
             <h2
               style={{
@@ -869,7 +869,7 @@ export default function HackathonPage() {
         >
           <div className="mx-auto" style={{ maxWidth: "880px" }}>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.05em", marginBottom: "var(--space-sm)" }}>
-              // faq
+              {'// faq'}
             </p>
             <h2
               style={{

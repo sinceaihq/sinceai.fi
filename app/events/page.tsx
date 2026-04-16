@@ -6,8 +6,8 @@ import SmoothScroll from "@/components/smoothScroll";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/sections/Footer";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Users, ExternalLink, ArrowRight } from "lucide-react";
-import { FIRST_EVENT, UPCOMING_EVENT_2026, COPY, LINKS } from "@/lib/sinceai";
+import { Calendar, MapPin, ExternalLink, ArrowRight } from "lucide-react";
+import { FIRST_EVENT, COPY, LINKS } from "@/lib/sinceai";
 import { getFirstEventSchema, getUpcoming2026EventSchema, getBreadcrumbSchema } from "@/lib/schema";
 import { ORG } from "@/lib/org";
 

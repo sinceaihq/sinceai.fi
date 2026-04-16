@@ -26,6 +26,7 @@ export const Navbar = () => {
 
   // Close overlay on route change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuOpen(false);
   }, [pathname]);
 

@@ -1,5 +1,5 @@
 'use client';
-import { ReactNode, useRef, useState } from 'react';
+import { ReactNode, useRef } from 'react';
 import {
   motion,
   useInView,

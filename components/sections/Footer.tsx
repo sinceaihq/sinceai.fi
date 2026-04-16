@@ -145,7 +145,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
           {/* ── Social links — text-based, right-aligned ──────── */}
           <div style={{ maxWidth: "320px" }}>
-            <span style={labelStyle}>// community</span>
+            <span style={labelStyle}>{'// community'}</span>
             <div className="flex flex-wrap" style={{ gap: "0 var(--space-md)", rowGap: "0" }}>
               {SOCIAL_LINKS.map((s) => (
                 <a
