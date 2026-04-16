@@ -4,7 +4,7 @@ const aboutPageSchema = {
   "@id": "https://sinceai.fi/about",
   name: "About Since AI",
   description:
-    "Since AI is Europe's execution-focused AI innovation ecosystem. Finnish non-profit (Since AI ry) connecting 10,000+ AI builders with leading AI companies, research groups, and investors.",
+    "Since AI is Europe's execution-focused AI innovation ecosystem. A non-profit connecting 10,000+ AI builders with leading AI companies, research groups, and investors.",
   url: "https://sinceai.fi/about",
   mainEntity: { "@id": "https://sinceai.fi/#organization" },
 };

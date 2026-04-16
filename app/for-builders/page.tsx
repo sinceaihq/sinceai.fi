@@ -38,7 +38,7 @@ const builderFaqs = [
   {
     question: "Is there a cost to join Since AI?",
     answer:
-      "No. Since AI is a Finnish non-profit (Since AI ry, Business ID 3593920-2). Joining the community, participating in Discord, and applying to hackathons is free. Our operations are funded by partner sponsorships.",
+      "No. Since AI is a non-profit. Joining the community, participating in Discord, and applying to hackathons is free. Our operations are funded by partner sponsorships.",
   },
   {
     question: "What is the application process for Since AI Hackathon 2026?",

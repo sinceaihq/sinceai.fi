@@ -136,7 +136,7 @@ export function BelowHero() {
             }}
           >
             Since AI is Europe&apos;s execution-focused AI innovation ecosystem — where
-            frontier AI becomes shipped products. A Finnish non-profit connecting
+            frontier AI becomes shipped products. A non-profit connecting
             10,000+ AI builders across Europe with leading AI companies, research
             groups, and investors. Partners include Google for Developers, Bayer,
             Sandvik, Kongsberg, Valmet, Antler, Inventure, and the University of Turku.

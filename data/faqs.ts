@@ -29,7 +29,7 @@ export const faqs: Faq[] = [
   {
     question: "Who can join Since AI?",
     answer:
-      "Since AI is open to AI developers, researchers, founders, and partner organizations globally. Community activity happens primarily in English. There is no membership fee — the organization is a Finnish non-profit (Since AI ry, Business ID 3593920-2) operating as an aatteellinen yhdistys.",
+      "Since AI is open to AI developers, researchers, founders, and partner organizations globally. Community activity happens primarily in English. There is no membership fee — the organization is a non-profit.",
   },
   {
     question: "Does Since AI help with AI startup creation?",
@@ -44,7 +44,7 @@ export const faqs: Faq[] = [
   {
     question: "Is Since AI a for-profit company?",
     answer:
-      "No. Since AI is a registered Finnish non-profit association — Since AI ry, Business ID 3593920-2. Its mission is to strengthen Europe's AI capability through execution, open collaboration, and real outcomes.",
+      "No. Since AI is a registered non-profit. Its mission is to strengthen Europe's AI capability through execution, open collaboration, and real outcomes.",
   },
   {
     question: "What are the best AI hackathons in Europe?",

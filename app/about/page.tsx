@@ -11,12 +11,12 @@ import StructuredData from "@/components/StructuredData";
 export const metadata: Metadata = {
   title: "About Since AI — Europe's Execution-Focused AI Innovation Ecosystem",
   description:
-    "Since AI is a Finnish non-profit (Since AI ry, Business ID 3593920-2) connecting 10,000+ AI builders across Europe. Learn about our mission, founders, and legal structure.",
+    "Since AI is a non-profit connecting 10,000+ AI builders across Europe. Learn about our mission, founders, and legal structure.",
   alternates: { canonical: "https://sinceai.fi/about" },
   openGraph: {
     title: "About Since AI — Europe's Execution-Focused AI Innovation Ecosystem",
     description:
-      "Since AI is a Finnish non-profit connecting 10,000+ AI builders across Europe with leading AI companies, research groups, and investors.",
+      "Since AI is a non-profit connecting 10,000+ AI builders across Europe with leading AI companies, research groups, and investors.",
     url: "https://sinceai.fi/about",
     siteName: "Since AI",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Since AI",
     description:
-      "Finnish non-profit connecting 10,000+ AI builders across Europe. Mission: strengthen Europe's AI capability through execution.",
+      "Non-profit connecting 10,000+ AI builders across Europe. Mission: strengthen Europe's AI capability through execution.",
   },
 };
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
               {/* 2. Extractable definition paragraph */}
               <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed mb-16">
                 Since AI is Europe&apos;s execution-focused AI innovation ecosystem, where
-                frontier AI becomes shipped products. A Finnish non-profit connecting
+                frontier AI becomes shipped products. A non-profit connecting
                 10,000+ AI builders across Europe with leading AI companies, research
                 groups, and investors. Our mission: strengthen Europe&apos;s AI capability
                 through execution, open collaboration, and real outcomes.

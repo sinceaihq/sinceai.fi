@@ -344,10 +344,9 @@ export default function AIHackathonsPage() {
                   Who organizes Since AI Hackathon?
                 </h2>
                 <p className="text-neutral-300 leading-relaxed mb-4">
-                  Since AI (Since AI ry, Business ID: 3593920-2) is a Finnish non-profit
-                  organization based in Turku. We are Europe&apos;s execution-focused AI
-                  innovation ecosystem — connecting 10,000+ AI builders in our network across
-                  Europe with leading AI companies, research groups, and investors.
+                  Since AI is a non-profit organization based in Turku, Europe&apos;s
+                  execution-focused AI innovation ecosystem — connecting 10,000+ AI builders
+                  across Europe with leading AI companies, research groups, and investors.
                 </p>
                 <p className="text-neutral-400 leading-relaxed mb-6">
                   Since AI Hackathon 2026 is our flagship annual event. It is backed by

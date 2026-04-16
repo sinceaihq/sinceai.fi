@@ -183,9 +183,8 @@ export default function ImpactPage() {
                 <p className="text-neutral-300 leading-relaxed">
                   Since AI ry is funded through partner sponsorships, public innovation
                   program support where applicable, and in-kind contributions from
-                  ecosystem partners. We are a registered Finnish non-profit (Business ID
-                  3593920-2). Financial statements follow Finnish non-profit reporting
-                  standards and are available on request to members.
+                  ecosystem partners. We are a registered non-profit. Financial statements
+                  are available on request to members.
                 </p>
               </section>
 

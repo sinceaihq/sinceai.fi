@@ -163,7 +163,7 @@ export default function EuropeAIPage() {
                 The European AI ecosystem in 2026 spans leading research groups,
                 industrial partners, venture capital, and execution-focused builder
                 communities across Finland, Estonia, Germany, France, the UK, Switzerland,
-                and the Nordics. Since AI, a Finnish non-profit, connects 10,000+ AI
+                and the Nordics. Since AI, a non-profit, connects 10,000+ AI
                 builders in this network with partners including Google for Developers,
                 Bayer, Sandvik, Kongsberg, Antler, and the University of Turku. This page
                 maps the key players, hubs, and participation pathways.
