@@ -52,68 +52,7 @@ const hackathonFaqs = [
   },
 ];
 
-// JSON-LD schemas
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  name: "Since AI Hackathon 2026",
-  alternateName: ["Since AI Hackathon", "SinceAI Hackathon 2026"],
-  description:
-    "Europe's largest annual AI hackathon organized by Since AI community. Featuring industry challenges from top industrial and tech companies, official MLH partnership, and 1000+ participants from Finland, Europe, and worldwide.",
-  url: "https://sinceai.fi/hackathon",
-  startDate: "2026-11",
-  eventStatus: "https://schema.org/EventScheduled",
-  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-  image: "https://sinceai.fi/api/og/hackathon",
-  location: {
-    "@type": "Place",
-    name: "EduCity, Turku University of Applied Sciences",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Joukahaisenkatu 3",
-      addressLocality: "Turku",
-      addressCountry: "FI",
-    },
-  },
-  organizer: {
-    "@type": "Organization",
-    name: "Since AI",
-    url: "https://sinceai.fi",
-    sameAs: ["https://discord.com/invite/YkqJswRGSW", "https://t.me/sinceaihq"],
-  },
-  sponsor: [
-    { "@type": "Organization", name: "Valmet", url: "https://www.valmet.com" },
-    {
-      "@type": "Organization",
-      name: "Sandvik",
-      url: "https://www.sandvik.com",
-    },
-    {
-      "@type": "Organization",
-      name: "Kongsberg",
-      url: "https://www.kongsberg.com",
-    },
-    {
-      "@type": "Organization",
-      name: "ElevenLabs",
-      url: "https://elevenlabs.io",
-    },
-    { "@type": "Organization", name: "Antler", url: "https://www.antler.co" },
-    {
-      "@type": "Organization",
-      name: "Major League Hacking",
-      url: "https://mlh.io",
-    },
-  ],
-  audience: {
-    "@type": "Audience",
-    audienceType:
-      "AI developers, software engineers, data scientists, entrepreneurs, students",
-  },
-  maximumAttendeeCapacity: 1000,
-  isAccessibleForFree: true,
-  inLanguage: "en",
-};
+// Note: Event schema is injected server-side via app/hackathon/layout.tsx
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -208,11 +147,7 @@ export default function HackathonPage() {
     <SmoothScroll>
       <Navbar />
 
-      {/* JSON-LD structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
-      />
+      {/* Breadcrumb + FAQ JSON-LD (Event schema is in layout.tsx) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

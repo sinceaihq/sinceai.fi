@@ -11,8 +11,8 @@ import { challengeThemes } from "@/lib/projects";
 
 // Lean homepage sections
 import { LeanHero } from "@/components/sections/homepage/LeanHero";
-import { TrustBar } from "@/components/sections/homepage/TrustBar";
 import { ThreePillars } from "@/components/sections/homepage/ThreePillars";
+import { HackathonFeature } from "@/components/sections/homepage/HackathonFeature";
 import { ProofStrip } from "@/components/sections/homepage/ProofStrip";
 import { ProjectSpotlight } from "@/components/sections/homepage/ProjectSpotlight";
 import { DualCTA } from "@/components/sections/homepage/DualCTA";
@@ -49,13 +49,13 @@ export default function HomePage() {
           {/* A) Hero - Minimal */}
           <LeanHero discordUrl={config.discordUrl} />
 
-          {/* B) Trust Bar - Logos ONCE */}
-          <TrustBar />
-
-          {/* C) Three Pillars - Short */}
+          {/* B) Three Pillars - Short */}
           <ThreePillars />
 
-          {/* D) Proof Strip - Metrics + 1 Quote */}
+          {/* C) Hackathon 2026 Feature */}
+          <HackathonFeature />
+
+          {/* D) Proof Strip - Metrics */}
           <ProofStrip />
 
           {/* E) Project Spotlight - 2 Challenge Themes */}
