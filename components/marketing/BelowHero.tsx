@@ -136,11 +136,10 @@ export function BelowHero() {
             }}
           >
             Since AI is Europe&apos;s execution-focused AI innovation ecosystem — where
-            frontier AI becomes shipped products. A Finnish non-profit (Since AI ry,
-            Business ID 3593920-2) connecting 10,000+ AI builders across Europe with
-            leading AI companies, research groups, and investors. Partners include Google
-            for Developers, Bayer, Sandvik, Kongsberg, Valmet, Antler, Inventure, and
-            the University of Turku.
+            frontier AI becomes shipped products. A Finnish non-profit connecting
+            10,000+ AI builders across Europe with leading AI companies, research
+            groups, and investors. Partners include Google for Developers, Bayer,
+            Sandvik, Kongsberg, Valmet, Antler, Inventure, and the University of Turku.
           </p>
         </div>
       </section>
