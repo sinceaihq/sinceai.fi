@@ -5,12 +5,14 @@ export const metadata: Metadata = {
   title:
     "Since AI Hackathon 2026 — Europe's Execution-Focused AI Hackathon | November 6–8, Turku",
   description:
-    "72-hour AI hackathon in Turku, Finland. 1,000+ builders targeted. Partner challenges from Google for Developers, Bayer, Sandvik, Kongsberg, Valmet. Open to builders worldwide.",
+    "72-hour AI hackathon in Turku, Finland. Official MLH partner event. 1,000+ builders targeted. Partner challenges from Google for Developers, Bayer, Sandvik, Kongsberg, Valmet. Open to builders worldwide.",
   keywords: [
     "Since AI Hackathon 2026",
     "AI hackathon Finland",
     "AI hackathon Europe",
     "hackathon Turku 2026",
+    "MLH hackathon Europe 2026",
+    "Major League Hacking Finland",
     "Since AI event",
     "AI builders hackathon",
     "hackathon Turku AMK EduCity",

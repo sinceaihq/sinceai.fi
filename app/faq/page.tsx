@@ -113,10 +113,10 @@ export default function FAQPage() {
                 <p className="text-neutral-300 mb-6">
                   Contact{" "}
                   <a
-                    href={`mailto:${ORG.contact.email}`}
+                    href={`mailto:${ORG.contact.infoEmail}`}
                     className="text-white underline hover:text-neutral-300"
                   >
-                    {ORG.contact.email}
+                    {ORG.contact.infoEmail}
                   </a>{" "}
                   or join our Discord community.
                 </p>

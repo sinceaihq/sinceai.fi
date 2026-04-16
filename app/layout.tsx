@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
 import { CookieConsent } from "@/components/CookieConsent";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-mono",
+  weight: ["400", "500", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -143,14 +151,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${jetbrainsMono.variable} ${inter.variable}`}>
       <head>
         <StructuredData data={organizationSchema} />
         <StructuredData data={websiteSchema} />
       </head>
-      <body
-        className={`${spaceGrotesk.variable} font-sans antialiased bg-black`}
-      >
+      <body className="antialiased bg-black">
         {children}
         <CookieConsent />
       </body>
