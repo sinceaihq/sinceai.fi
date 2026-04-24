@@ -27,6 +27,11 @@ const securityHeaders = [
   },
 ];
 
+const revalidateOnEveryRequestHeader = {
+  key: 'Cache-Control',
+  value: 'public, max-age=0, must-revalidate',
+};
+
 const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
@@ -39,7 +44,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/(.*)',
-        headers: securityHeaders,
+        headers: [...securityHeaders, revalidateOnEveryRequestHeader],
       },
     ];
   },
