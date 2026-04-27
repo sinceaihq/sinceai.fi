@@ -215,7 +215,7 @@ interface TeamMember {
 }
 
 // Team Card Component - Lean & Premium
-const TeamCard: React.FC<{ person: TeamMember; index: number }> = ({ person }) => (
+const TeamCard: React.FC<{ person: TeamMember }> = ({ person }) => (
   <div
     className="group relative border border-white/5 rounded-xl p-6 hover:border-white/10 hover:bg-white/[0.02] transition-all duration-300 text-center"
   >
