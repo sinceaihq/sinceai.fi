@@ -5,20 +5,23 @@ const DISCORD_URL = "https://discord.com/invite/YkqJswRGSW";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col min-h-[85vh] md:min-h-screen bg-black pt-[100px]">
+    <section
+      className="relative flex flex-col min-h-[85vh] md:min-h-screen bg-black pt-[100px]"
+      style={{ paddingLeft: "var(--space-lg)", paddingRight: "var(--space-lg)" }}
+    >
       {/* ── Vertically-centred content ─────────────────────── */}
       <div className="flex-1 flex items-center">
         <div
-          className="mx-auto w-full px-6"
+          className="mx-auto w-full"
           style={{ maxWidth: "1200px" }}
         >
           {/* H1 */}
           <h1
             style={{
               fontFamily: "var(--font-mono)",
-              fontSize: "var(--text-headline-lg)",
+              fontSize: "clamp(42px, 6.5vw, 80px)",
               fontWeight: 500,
-              lineHeight: 1.0,
+              lineHeight: 1.05,
               letterSpacing: "-0.02em",
               maxWidth: "900px",
               margin: 0,
@@ -34,7 +37,7 @@ export function Hero() {
               fontFamily: "var(--font-mono)",
               fontSize: "var(--text-sm)",
               color: "var(--color-fg-muted)",
-              marginTop: "var(--space-md)",
+              marginTop: "var(--space-sm)",
               letterSpacing: "0.01em",
               lineHeight: 1.6,
             }}
@@ -45,7 +48,7 @@ export function Hero() {
           {/* CTAs */}
           <div
             className="flex flex-col sm:flex-row"
-            style={{ marginTop: "var(--space-lg)", gap: "12px" }}
+            style={{ marginTop: "var(--space-md)", gap: "12px" }}
           >
             {/* Primary — inverted */}
             <a
@@ -94,6 +97,7 @@ export function Hero() {
       </div>
 
       {/* ── Partner marquee — bottom-docked ─────────────────── */}
+      <div className="h-12 shrink-0" />
       <PartnerMarquee />
     </section>
   );
