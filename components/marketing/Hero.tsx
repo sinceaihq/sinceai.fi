@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaDiscord } from "react-icons/fa";
 import { PartnerMarquee } from "./PartnerMarquee";
 
 const DISCORD_URL = "https://discord.com/invite/YkqJswRGSW";
@@ -49,7 +50,7 @@ export function Hero() {
           >
             {/* Primary — inverted */}
             <a
-              href={DISCORD_URL}
+              href="https://sinceai.app"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -66,7 +67,7 @@ export function Hero() {
                 whiteSpace: "nowrap",
               }}
             >
-              Join the builder network →
+              Join the platform →
             </a>
 
             {/* Secondary — outlined */}
@@ -89,11 +90,35 @@ export function Hero() {
             >
               Partner with Since AI →
             </Link>
+
+            {/* Tertiary — Discord */}
+            <a
+              href={DISCORD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                fontFamily: "var(--font-mono)",
+                fontSize: "13px",
+                fontWeight: 500,
+                color: "#fff",
+                background: "transparent",
+                padding: "12px 20px",
+                borderRadius: 0,
+                border: "0.5px solid var(--color-border-strong)",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+              }}
+            >
+              <FaDiscord style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
+              Join Discord
+            </a>
           </div>
         </div>
       </div>
 
       {/* ── Partner marquee — bottom-docked ─────────────────── */}
+      <div className="h-10 shrink-0" />
       <PartnerMarquee />
     </section>
   );
