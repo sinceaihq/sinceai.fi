@@ -144,7 +144,7 @@ export default function HackathonPage() {
       <main className="flex flex-col w-full bg-black min-h-screen">
 
         {/* ── SECTION 1: Hero ─────────────────────────────────── */}
-        <section className="relative w-full min-h-screen md:h-screen flex flex-col">
+        <section className="relative w-full min-h-screen flex flex-col">
           <Image
             src="/assets/images/educity-hero.webp"
             alt="EduCity, Turku — venue for Since AI Hackathon 2026"
@@ -167,7 +167,7 @@ export default function HackathonPage() {
             className="relative z-10 mx-auto w-full"
             style={{
               maxWidth: "1200px",
-              padding: "150px var(--space-lg) var(--space-2xl)",
+              padding: "clamp(100px, 15vh, 150px) var(--space-lg) var(--space-2xl)",
             }}
           >
             <h1
@@ -268,16 +268,20 @@ export default function HackathonPage() {
               Powered by world-class infrastructure.
             </h2>
 
-            <div style={{ display: "flex", flexWrap: "wrap", marginLeft: "calc(-1 * var(--space-2xl))" }}>
+            <div className="flex flex-col md:flex-row">
               {[
                 { name: "Google", label: "Compute partner" },
                 { name: "AMD",    label: "Compute partner" },
                 { name: "LUMI",   label: "Supercomputer access" },
               ].map((partner, i) => (
-                <div key={partner.name} style={{
-                  borderLeft: i > 0 ? "0.5px solid var(--color-border)" : undefined,
-                  padding: "0 var(--space-2xl)",
-                }}>
+                <div
+                  key={partner.name}
+                  className={i > 0 ? "border-t md:border-t-0 md:border-l border-[var(--color-border)]" : ""}
+                  style={{ padding: "var(--space-md) var(--space-lg)" }}
+                  style={{
+                    padding: "var(--space-md) var(--space-lg)",
+                  }}
+                >
                   <p style={{
                     fontFamily: "var(--font-mono)",
                     fontSize: "var(--text-xs)",
