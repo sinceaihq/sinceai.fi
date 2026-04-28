@@ -139,7 +139,7 @@ const teamSections = [
     ],
   },
   {
-    department: "Tech & Development",
+    department: "Development",
     members: [
       {
         name: "Abel Alem",
@@ -165,7 +165,7 @@ const teamSections = [
       },
       {
         name: "Zain Taufique",
-        role: "Tech & Development",
+        role: "Development",
         email: "zain@sinceai.fi",
         linkedin: "https://www.linkedin.com/in/zain-taufique-20273179/",
       },

@@ -82,7 +82,7 @@ export const Navbar = () => {
 
           {/* Desktop CTA */}
           <a
-            href="https://sinceai.app"
+            href="https://sinceai.app/sign-up"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-block text-[13px] font-medium no-underline text-black bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -94,7 +94,7 @@ export const Navbar = () => {
               whiteSpace: "nowrap",
             }}
           >
-            Join →
+            Apply →
           </a>
 
           {/* Mobile hamburger */}
@@ -169,7 +169,7 @@ export const Navbar = () => {
           {/* CTA — pinned to bottom */}
           <div className="mt-auto">
             <a
-              href={DISCORD_URL}
+              href="https://sinceai.app/sign-up"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-[13px] font-medium no-underline text-black bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
@@ -180,7 +180,7 @@ export const Navbar = () => {
                 border: "0.5px solid #fff",
               }}
             >
-              Join →
+              Apply →
             </a>
           </div>
         </div>

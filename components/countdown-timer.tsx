@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface CountdownTimerProps {
   startDate: string;
@@ -14,11 +14,7 @@ interface TimeLeft {
   seconds: number;
 }
 
-type EventStatus =
-  | "loading"
-  | "upcoming"
-  | "live"
-  | "ended";
+type EventStatus = "loading" | "upcoming" | "live" | "ended";
 
 interface EventState {
   status: EventStatus;
@@ -27,9 +23,7 @@ interface EventState {
 
 function calculateTimeLeft(targetDate: string): TimeLeft | null {
   const diff = new Date(targetDate).getTime() - Date.now();
-
   if (diff <= 0) return null;
-
   return {
     days: Math.floor(diff / 86_400_000),
     hours: Math.floor((diff / 3_600_000) % 24),
@@ -43,102 +37,130 @@ function getEventState(startDate: string, endDate: string): EventState {
   const start = new Date(startDate).getTime();
   const end = new Date(endDate).getTime();
 
-  if (now >= end) {
-    return { status: "ended" };
-  }
-
-  if (now >= start) {
-    return { status: "live" };
-  }
+  if (now >= end) return { status: "ended" };
+  if (now >= start) return { status: "live" };
 
   const timeLeft = calculateTimeLeft(startDate);
-  if (timeLeft) {
-    return { status: "upcoming", timeLeft };
-  }
-
-  return { status: "live" };
+  return timeLeft ? { status: "upcoming", timeLeft } : { status: "live" };
 }
 
-const TIME_UNITS = ["Days", "Hours", "Minutes", "Seconds"] as const;
+const UNITS = [
+  { key: "days",    label: "days" },
+  { key: "hours",   label: "hours" },
+  { key: "minutes", label: "min" },
+  { key: "seconds", label: "sec" },
+] as const;
+
+function CountdownUnits({ timeLeft }: { timeLeft: TimeLeft | Record<string, number> }) {
+  return (
+    <div
+      style={{
+        display: "inline-grid",
+        gridTemplateColumns: "auto 1fr auto 1fr auto 1fr auto",
+        rowGap: "6px",
+        columnGap: "8px",
+        alignItems: "center",
+        background: "rgba(255,255,255,0.04)",
+        border: "0.5px solid var(--color-border)",
+        padding: "12px 16px",
+        marginBottom: "var(--space-lg)",
+        maxWidth: "100%",
+      }}
+    >
+      {/* Label row */}
+      <span style={{
+        gridColumn: "1 / -1",
+        fontFamily: "var(--font-mono)",
+        fontSize: "var(--text-xs)",
+        color: "var(--color-fg-muted)",
+        letterSpacing: "0.08em",
+        textTransform: "uppercase",
+        paddingBottom: "8px",
+        borderBottom: "0.5px solid var(--color-border)",
+        marginBottom: "4px",
+      }}>
+        until Since AI Hackathon 2026 begins
+      </span>
+
+      {/* Numbers row */}
+      {UNITS.map(({ key }, i) => (
+        <React.Fragment key={key}>
+          <span style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "clamp(24px, 6.5vw, 80px)",
+            fontWeight: 500,
+            color: "#fff",
+            lineHeight: 1,
+            letterSpacing: "-0.03em",
+            fontVariantNumeric: "tabular-nums",
+            gridRow: 2,
+          }}>
+            {String(timeLeft[key]).padStart(2, "0")}
+          </span>
+          {i < UNITS.length - 1 && (
+            <span style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: "clamp(16px, 3.5vw, 48px)",
+              color: "var(--color-border-strong)",
+              lineHeight: 1,
+              textAlign: "center",
+              gridRow: 2,
+            }}>
+              :
+            </span>
+          )}
+        </React.Fragment>
+      ))}
+      {/* Labels row */}
+      {UNITS.map(({ key, label }, i) => (
+        <React.Fragment key={`label-${key}`}>
+          <span style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "var(--text-xs)",
+            color: "var(--color-fg-muted)",
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            gridRow: 3,
+          }}>
+            {label}
+          </span>
+          {i < UNITS.length - 1 && <span style={{ gridRow: 3 }} />}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+}
 
 export function CountdownTimer({ startDate, endDate }: CountdownTimerProps) {
   const [state, setState] = useState<EventState>({ status: "loading" });
 
   useEffect(() => {
-    const tick = () => {
-      setState(getEventState(startDate, endDate));
-    };
-
+    const tick = () => setState(getEventState(startDate, endDate));
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, [startDate, endDate]);
 
-  // Loading state - avoids hydration mismatch
   if (state.status === "loading") {
-    return (
-      <div className="flex items-center justify-center gap-3 md:gap-6 mb-10">
-        {TIME_UNITS.map((label) => (
-          <div key={label} className="flex flex-col items-center">
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
-              <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tabular-nums">
-                --
-              </span>
-            </div>
-            <span className="text-xs md:text-sm text-neutral-500 mt-2 font-medium uppercase tracking-wider">
-              {label}
-            </span>
-          </div>
-        ))}
-      </div>
-    );
+    return <CountdownUnits timeLeft={{ days: 0, hours: 0, minutes: 0, seconds: 0 }} />;
   }
 
-  // Event is upcoming - show countdown
   if (state.status === "upcoming" && state.timeLeft) {
-    return (
-      <div className="flex items-center justify-center gap-3 md:gap-6 mb-10">
-        {TIME_UNITS.map((label) => (
-          <div key={label} className="flex flex-col items-center">
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
-              <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tabular-nums">
-                {String(state.timeLeft![label.toLowerCase() as keyof TimeLeft]).padStart(2, "0")}
-              </span>
-            </div>
-            <span className="text-xs md:text-sm text-neutral-500 mt-2 font-medium uppercase tracking-wider">
-              {label}
-            </span>
-          </div>
-        ))}
-      </div>
-    );
+    return <CountdownUnits timeLeft={state.timeLeft} />;
   }
 
-  // Event is live
   if (state.status === "live") {
     return (
-      <div className="mb-10">
-        <div className="inline-block px-8 py-4 rounded-2xl bg-green-500/30 backdrop-blur-sm bg-green-950/50 border border-green-500/50">
-          <span className="text-xl md:text-2xl font-bold text-green-400 flex items-center gap-2">
-            <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-            </span>
-            Event is Live!
-          </span>
-        </div>
-      </div>
+      <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-sm)", color: "#22c55e", marginBottom: "var(--space-lg)", letterSpacing: "0.05em" }}>
+        <span style={{ display: "inline-block", width: 6, height: 6, borderRadius: "50%", background: "#22c55e", marginRight: 8, verticalAlign: "middle" }} />
+        Event is live
+      </p>
     );
   }
 
-  // Event has ended
   return (
-    <div className="mb-10">
-      <div className="inline-block px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-sm bg-black/50 border border-white/20">
-        <span className="text-xl md:text-2xl font-bold text-white">
-          Event ended, see you next year!
-        </span>
-      </div>
-    </div>
+    <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-sm)", color: "var(--color-fg-muted)", marginBottom: "var(--space-lg)" }}>
+      Event ended — see you next year.
+    </p>
   );
 }

@@ -1,18 +1,13 @@
 import Link from "next/link";
-import { FaDiscord } from "react-icons/fa";
 import { PartnerMarquee } from "./PartnerMarquee";
-
-const DISCORD_URL = "https://discord.com/invite/YkqJswRGSW";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col min-h-[85vh] md:min-h-screen bg-black pt-[100px]">
-      {/* ── Vertically-centred content ─────────────────────── */}
-      <div className="flex-1 flex items-center">
-        <div
-          className="mx-auto w-full px-6"
-          style={{ maxWidth: "1200px" }}
-        >
+    <section className="relative flex flex-col min-h-[85vh] md:min-h-screen bg-black">
+      <div
+        className="mx-auto w-full"
+        style={{ maxWidth: "1200px", padding: "150px var(--space-lg) 0" }}
+      >
           {/* H1 */}
           <h1
             style={{
@@ -43,16 +38,29 @@ export function Hero() {
             where frontier AI becomes shipped products.
           </p>
 
+          {/* Hackathon teaser */}
+          <p
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: "var(--text-sm)",
+              color: "var(--color-fg-muted)",
+              marginTop: "var(--space-lg)",
+              marginBottom: "var(--space-sm)",
+              letterSpacing: "0.01em",
+            }}
+          >
+            <span style={{ display: "inline-block", width: "6px", height: "6px", borderRadius: "50%", background: "#22c55e", marginRight: "8px", verticalAlign: "middle" }} />
+            Since AI Hackathon 2026 &thinsp;·&thinsp; €50,000 cash prize pool &thinsp;·&thinsp; Registration open
+          </p>
+
           {/* CTAs */}
           <div
             className="flex flex-col sm:flex-row"
-            style={{ marginTop: "var(--space-lg)", gap: "12px" }}
+            style={{ gap: "12px" }}
           >
-            {/* Primary — inverted */}
-            <a
-              href="https://sinceai.app"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Primary — hackathon */}
+            <Link
+              href="/hackathon"
               style={{
                 display: "inline-block",
                 fontFamily: "var(--font-mono)",
@@ -67,9 +75,8 @@ export function Hero() {
                 whiteSpace: "nowrap",
               }}
             >
-              Join the platform →
-            </a>
-
+              Learn more →
+            </Link>
             {/* Secondary — outlined */}
             <Link
               href="/partners"
@@ -91,31 +98,10 @@ export function Hero() {
               Partner with Since AI →
             </Link>
 
-            {/* Tertiary — Discord */}
-            <a
-              href={DISCORD_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-block",
-                fontFamily: "var(--font-mono)",
-                fontSize: "13px",
-                fontWeight: 500,
-                color: "#fff",
-                background: "transparent",
-                padding: "12px 20px",
-                borderRadius: 0,
-                border: "0.5px solid var(--color-border-strong)",
-                textDecoration: "none",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <FaDiscord style={{ display: "inline", marginRight: "6px", verticalAlign: "middle" }} />
-              Join Discord
-            </a>
           </div>
-        </div>
       </div>
+
+      <div className="flex-1" />
 
       {/* ── Partner marquee — bottom-docked ─────────────────── */}
       <div className="h-10 shrink-0" />
