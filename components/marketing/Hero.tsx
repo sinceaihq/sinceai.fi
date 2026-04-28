@@ -43,33 +43,43 @@ export function Hero() {
             where frontier AI becomes shipped products.
           </p>
 
+          {/* Hackathon announcement */}
+          <a
+            href="/hackathon"
+            className="flex sm:inline-flex"
+            style={{
+              alignItems: "center",
+              gap: "12px",
+              fontFamily: "var(--font-mono)",
+              fontSize: "13px",
+              fontWeight: 500,
+              color: "#000",
+              textDecoration: "none",
+              letterSpacing: "0.02em",
+              marginTop: "var(--space-lg)",
+              padding: "12px 16px",
+              border: "0.5px solid #fff",
+              background: "#fff",
+              whiteSpace: "nowrap",
+            }}
+          >
+            <span style={{
+              display: "inline-block",
+              width: "7px",
+              height: "7px",
+              borderRadius: "50%",
+              background: "#22c55e",
+              flexShrink: 0,
+            }} />
+            <span className="sm:hidden">Since AI Hackathon 2026 &thinsp;·&thinsp; Apply now →</span>
+            <span className="hidden sm:inline">Since AI Hackathon 2026 &thinsp;·&thinsp; €50,000 cash prize pool &thinsp;·&thinsp; Registration open →</span>
+          </a>
+
           {/* CTAs */}
           <div
             className="flex flex-col sm:flex-row"
-            style={{ marginTop: "var(--space-lg)", gap: "12px" }}
+            style={{ marginTop: "var(--space-md)", gap: "12px" }}
           >
-            {/* Primary — inverted */}
-            <a
-              href="https://sinceai.app/sign-up"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-block",
-                fontFamily: "var(--font-mono)",
-                fontSize: "13px",
-                fontWeight: 500,
-                color: "#000",
-                background: "#fff",
-                padding: "12px 20px",
-                borderRadius: 0,
-                border: "0.5px solid #fff",
-                textDecoration: "none",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Apply now →
-            </a>
-
             {/* Secondary — outlined */}
             <Link
               href="/partners"
