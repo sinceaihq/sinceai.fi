@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import dynamic from "next/dynamic";
 
 interface HackathonCountdownProps {
@@ -11,18 +12,43 @@ const TIME_UNITS = ["Days", "Hours", "Minutes", "Seconds"] as const;
 
 function CountdownPlaceholder() {
   return (
-    <div className="flex items-center justify-center gap-3 md:gap-6 mb-10">
-      {TIME_UNITS.map((label) => (
-        <div key={label} className="flex flex-col items-center">
-          <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tabular-nums">
-              --
-            </span>
-          </div>
-          <span className="text-xs md:text-sm text-neutral-500 mt-2 font-medium uppercase tracking-wider">
-            {label}
-          </span>
-        </div>
+    <div style={{
+      display: "inline-grid",
+      gridTemplateColumns: "auto 1fr auto 1fr auto 1fr auto",
+      rowGap: "6px",
+      columnGap: "8px",
+      alignItems: "center",
+      background: "rgba(255,255,255,0.04)",
+      border: "0.5px solid var(--color-border)",
+      padding: "12px 16px",
+      marginBottom: "var(--space-lg)",
+      maxWidth: "100%",
+    }}>
+      <span style={{
+        gridColumn: "1 / -1",
+        fontFamily: "var(--font-mono)",
+        fontSize: "var(--text-xs)",
+        color: "var(--color-fg-muted)",
+        letterSpacing: "0.08em",
+        textTransform: "uppercase",
+        paddingBottom: "8px",
+        borderBottom: "0.5px solid var(--color-border)",
+        marginBottom: "4px",
+      }}>
+        until Since AI Hackathon 2026 begins
+      </span>
+
+      {TIME_UNITS.map((label, i) => (
+        <React.Fragment key={label}>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(24px, 6.5vw, 80px)", fontWeight: 500, color: "#fff", lineHeight: 1, letterSpacing: "-0.03em", gridRow: 2 }}>00</span>
+          {i < TIME_UNITS.length - 1 && <span style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(16px, 3.5vw, 48px)", color: "var(--color-border-strong)", lineHeight: 1, textAlign: "center", gridRow: 2 }}>:</span>}
+        </React.Fragment>
+      ))}
+      {TIME_UNITS.map((label, i) => (
+        <React.Fragment key={`label-${label}`}>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--color-fg-muted)", letterSpacing: "0.08em", textTransform: "uppercase", gridRow: 3 }}>{label.toLowerCase()}</span>
+          {i < TIME_UNITS.length - 1 && <span style={{ gridRow: 3 }} />}
+        </React.Fragment>
       ))}
     </div>
   );

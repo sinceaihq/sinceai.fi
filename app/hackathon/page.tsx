@@ -25,7 +25,7 @@ const hackathonFaqs = [
   },
   {
     q: "When is Since AI Hackathon 2026?",
-    a: "Since AI Hackathon 2026 runs November 6–8, 2026 at EduCity, Joukahaisenkatu 7, Turku, Finland. Registrations opening soon — join Discord or Telegram to be notified first.",
+    a: "Since AI Hackathon 2026 runs November 6–8, 2026 at EduCity, Joukahaisenkatu 7, Turku, Finland. Registration is now open — apply at sinceai.app/sign-up.",
   },
   {
     q: "Is Since AI Hackathon an official MLH event?",
@@ -41,11 +41,11 @@ const hackathonFaqs = [
   },
   {
     q: "Is registration free?",
-    a: "Yes. Since AI Hackathon is free to attend for builders. Sponsorship and challenge partner opportunities are available for companies — see sinceai.fi/partners.",
+    a: "Yes. Since AI Hackathon is free to attend for builders. Sponsorship and challenge partner opportunities are available for companies — see sinceai.ai/partners.",
   },
   {
     q: "How do I register?",
-    a: "Registrations are opening soon for Since AI Hackathon 2026. Join our Discord (discord.com/invite/YkqJswRGSW) or Telegram (t.me/sinceaihq) to receive the registration announcement as soon as it opens.",
+    a: "Registration for Since AI Hackathon 2026 is now open. Apply at sinceai.app/sign-up — free for all builders worldwide. Join our Discord (discord.com/invite/YkqJswRGSW) or Telegram (t.me/sinceaihq) to connect with other participants.",
   },
   {
     q: "What companies set challenges?",
@@ -80,7 +80,7 @@ const keyFacts = [
   { label: "Language",       value: "English" },
   { label: "Participation",  value: "Free" },
   { label: "MLH",            value: "Official 2026 Season Member Event" },
-  { label: "Organised by",   value: "Since AI (sinceai.fi)" },
+  { label: "Organised by",   value: "Since AI (sinceai.ai)" },
 ];
 
 const whyItems = [
@@ -146,7 +146,7 @@ export default function HackathonPage() {
       <main className="flex flex-col w-full bg-black min-h-screen">
 
         {/* ── SECTION 1: Hero ─────────────────────────────────── */}
-        <section className="relative w-full min-h-[90vh] flex items-end">
+        <section className="relative w-full min-h-screen md:h-screen flex items-end">
           <Image
             src="/assets/images/educity-hero.webp"
             alt="EduCity, Turku — venue for Since AI Hackathon 2026"
@@ -156,7 +156,7 @@ export default function HackathonPage() {
             priority
           />
           {/* Overlays */}
-          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.82)" }} />
           <div
             className="absolute inset-x-0 bottom-0"
             style={{
@@ -169,21 +169,9 @@ export default function HackathonPage() {
             className="relative z-10 mx-auto w-full"
             style={{
               maxWidth: "1200px",
-              padding: "var(--space-3xl) var(--space-lg) var(--space-2xl)",
+              padding: "clamp(var(--space-lg), 10vh, var(--space-3xl)) var(--space-lg) var(--space-2xl)",
             }}
           >
-            <p
-              style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: "var(--text-xs)",
-                color: "var(--color-fg-muted)",
-                letterSpacing: "0.05em",
-                marginBottom: "var(--space-sm)",
-              }}
-            >
-              {'// flagship event'}
-            </p>
-
             <h1
               style={{
                 fontFamily: "var(--font-mono)",
@@ -204,7 +192,7 @@ export default function HackathonPage() {
             style={{
               fontFamily: "var(--font-mono)",
               fontSize: "14px",
-              color: "var(--color-fg-muted)",
+              color: "rgba(255,255,255,0.75)",
               marginBottom: "var(--space-lg)",
               letterSpacing: "0.01em",
             }}
@@ -213,7 +201,7 @@ export default function HackathonPage() {
           </p>
 
             {/* Countdown */}
-            <div style={{ marginBottom: "var(--space-lg)" }}>
+            <div>
               <HackathonCountdown
                 startDate="2026-11-06T09:00:00"
                 endDate="2026-11-08T23:59:00"
@@ -225,7 +213,7 @@ export default function HackathonPage() {
               style={{
                 fontFamily: "var(--font-mono)",
                 fontSize: "var(--text-sm)",
-                color: "var(--color-fg-muted)",
+                color: "rgba(255,255,255,0.75)",
                 marginBottom: "var(--space-lg)",
               }}
             >
@@ -235,24 +223,24 @@ export default function HackathonPage() {
                   width: "6px",
                   height: "6px",
                   borderRadius: "50%",
-                  background: "#f59e0b",
+                  background: "#22c55e",
                   marginRight: "8px",
                   verticalAlign: "middle",
                 }}
                 aria-hidden="true"
               />
-              Registrations opening soon — join Discord to be notified
+              Registration is open — apply now
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row" style={{ gap: "12px" }}>
               <a
-                href="https://discord.com/invite/YkqJswRGSW"
+                href="https://sinceai.app/sign-up"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={ctaPrimary}
               >
-                Get notified when registration opens →
+                Apply now →
               </a>
               <Link href="/partners" className="hero-cta-secondary" style={ctaSecondary}>
                 Partner with us →
@@ -804,7 +792,7 @@ export default function HackathonPage() {
                 marginBottom: "var(--space-md)",
               }}
             >
-              Opening soon.
+              Registration is open.
             </h2>
             <p
               style={{
@@ -816,19 +804,19 @@ export default function HackathonPage() {
                 marginBottom: "var(--space-lg)",
               }}
             >
-              Registration for Since AI Hackathon 2026 (November 6–8, Turku) opens soon. 
-              Join our community channels to be notified the moment applications go live —
-              and to connect with other builders before the event.
+              Registration for Since AI Hackathon 2026 (November 6–8, Turku) is now open.
+              Apply at sinceai.app/sign-up — free for all builders worldwide. Join our community
+              channels to connect with other participants before the event.
             </p>
 
             <div className="flex flex-col sm:flex-row" style={{ gap: "12px", marginBottom: "var(--space-xl)" }}>
               <a
-                href="https://discord.com/invite/YkqJswRGSW"
+                href="https://sinceai.app/sign-up"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={ctaPrimary}
               >
-                Join Discord — get notified →
+                Apply now →
               </a>
               <a
                 href="https://t.me/sinceaihq"

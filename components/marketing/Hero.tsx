@@ -49,8 +49,10 @@ export function Hero() {
             style={{ marginTop: "var(--space-lg)", gap: "12px" }}
           >
             {/* Primary — inverted */}
-            <Link
-              href="/hackathon"
+            <a
+              href="https://sinceai.app/sign-up"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: "inline-block",
                 fontFamily: "var(--font-mono)",
@@ -66,7 +68,7 @@ export function Hero() {
               }}
             >
               Apply now →
-            </Link>
+            </a>
 
             {/* Secondary — outlined */}
             <Link
