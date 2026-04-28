@@ -81,10 +81,8 @@ export const Navbar = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <a
-            href="https://sinceai.app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/hackathon"
             className="hidden md:inline-block text-[13px] font-medium no-underline text-black bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             style={{
               fontFamily: "var(--font-mono)",
@@ -94,8 +92,8 @@ export const Navbar = () => {
               whiteSpace: "nowrap",
             }}
           >
-            Join →
-          </a>
+            Apply now →
+          </Link>
 
           {/* Mobile hamburger */}
           <button
@@ -169,7 +167,7 @@ export const Navbar = () => {
           {/* CTA — pinned to bottom */}
           <div className="mt-auto">
             <a
-              href={DISCORD_URL}
+              href="https://sinceai.app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-[13px] font-medium no-underline text-black bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
@@ -180,7 +178,7 @@ export const Navbar = () => {
                 border: "0.5px solid #fff",
               }}
             >
-              Join →
+              Apply now →
             </a>
           </div>
         </div>

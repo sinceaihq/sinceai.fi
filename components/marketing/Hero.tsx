@@ -49,10 +49,8 @@ export function Hero() {
             style={{ marginTop: "var(--space-lg)", gap: "12px" }}
           >
             {/* Primary — inverted */}
-            <a
-              href="https://sinceai.app"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/hackathon"
               style={{
                 display: "inline-block",
                 fontFamily: "var(--font-mono)",
@@ -67,8 +65,8 @@ export function Hero() {
                 whiteSpace: "nowrap",
               }}
             >
-              Join the platform →
-            </a>
+              Apply now →
+            </Link>
 
             {/* Secondary — outlined */}
             <Link
