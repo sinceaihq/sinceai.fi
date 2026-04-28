@@ -268,7 +268,7 @@ export default function HackathonPage() {
               Powered by world-class infrastructure.
             </h2>
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row" style={{ marginLeft: "calc(-1 * var(--space-lg))" }}>
               {[
                 { name: "Google", label: "Compute partner" },
                 { name: "AMD",    label: "Compute partner" },
