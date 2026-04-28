@@ -278,9 +278,6 @@ export default function HackathonPage() {
                   key={partner.name}
                   className={i > 0 ? "border-t md:border-t-0 md:border-l border-[var(--color-border)]" : ""}
                   style={{ padding: "var(--space-md) var(--space-lg)" }}
-                  style={{
-                    padding: "var(--space-md) var(--space-lg)",
-                  }}
                 >
                   <p style={{
                     fontFamily: "var(--font-mono)",
