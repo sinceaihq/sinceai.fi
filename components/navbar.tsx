@@ -52,7 +52,7 @@ export const Navbar = () => {
           style={{ maxWidth: "1200px" }}
         >
           {/* Logo */}
-          <Link href="/" aria-label="Since AI — home" className={menuOpen ? "invisible md:visible" : ""}>
+          <Link href="/" aria-label="Since AI — home">
             <Logo />
           </Link>
 
@@ -130,8 +130,7 @@ export const Navbar = () => {
           transition={{ duration: 0.2, ease: "easeOut" }}
         >
           {/* Top row */}
-          <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-xl)" }}>
-            <Logo />
+          <div className="flex items-center justify-end" style={{ marginBottom: "var(--space-xl)" }}>
             <button
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
