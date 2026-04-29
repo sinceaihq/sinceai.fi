@@ -200,7 +200,7 @@ export default function HackathonPage() {
           </p>
 
             {/* Countdown */}
-            <div>
+            <div className="w-full sm:w-fit">
               <HackathonCountdown
                 startDate="2026-11-06T09:00:00"
                 endDate="2026-11-08T23:59:00"

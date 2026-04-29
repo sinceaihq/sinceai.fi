@@ -13,7 +13,7 @@ const TIME_UNITS = ["Days", "Hours", "Minutes", "Seconds"] as const;
 function CountdownPlaceholder() {
   return (
     <div style={{
-      display: "inline-grid",
+      display: "grid",
       gridTemplateColumns: "auto 1fr auto 1fr auto 1fr auto",
       rowGap: "6px",
       columnGap: "8px",
