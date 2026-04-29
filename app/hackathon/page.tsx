@@ -144,7 +144,7 @@ export default function HackathonPage() {
       <main className="flex flex-col w-full bg-black min-h-screen">
 
         {/* ── SECTION 1: Hero ─────────────────────────────────── */}
-        <section className="relative w-full min-h-screen flex flex-col">
+        <section className="relative w-full flex flex-col">
           <Image
             src="/assets/images/educity-hero.webp"
             alt="EduCity, Turku — venue for Since AI Hackathon 2026"
