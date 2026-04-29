@@ -3,25 +3,20 @@ import { PartnerMarquee } from "./PartnerMarquee";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col h-screen overflow-hidden bg-black">
-      {/* Content fills all space above marquee, distributes gap between headline and CTAs */}
+    <section className="relative flex flex-col bg-black">
       <div
-        className="flex-1 min-h-0 flex flex-col mx-auto w-full"
-        style={{
-          maxWidth: "1200px",
-          padding: "clamp(80px, 15vh, 150px) var(--space-lg) var(--space-2xl)",
-        }}
+        className="mx-auto w-full pt-20 md:pt-[clamp(100px,15vh,150px)]"
+        style={{ maxWidth: "1200px", paddingLeft: "var(--space-lg)", paddingRight: "var(--space-lg)" }}
       >
-        {/* Top: headline + tagline */}
-        <div>
+          {/* H1 */}
           <h1
             style={{
               fontFamily: "var(--font-mono)",
-              fontSize: "clamp(48px, min(8vw, 12vh), 140px)",
+              fontSize: "var(--text-headline-lg)",
               fontWeight: 500,
               lineHeight: 1.0,
               letterSpacing: "-0.02em",
-              maxWidth: "18ch",
+              maxWidth: "900px",
               margin: 0,
               color: "#fff",
             }}
@@ -29,6 +24,7 @@ export function Hero() {
             Global execution-focused AI innovation ecosystem.
           </h1>
 
+          {/* Tagline */}
           <p
             style={{
               fontFamily: "var(--font-mono)",
@@ -41,17 +37,14 @@ export function Hero() {
           >
             where frontier AI becomes shipped products.
           </p>
-        </div>
 
-        <div className="flex-1" />
-
-        {/* Bottom: teaser + CTAs */}
-        <div>
+          {/* Hackathon teaser */}
           <p
             style={{
               fontFamily: "var(--font-mono)",
               fontSize: "var(--text-sm)",
               color: "var(--color-fg-muted)",
+              marginTop: "var(--space-lg)",
               marginBottom: "var(--space-sm)",
               letterSpacing: "0.01em",
             }}
@@ -60,7 +53,12 @@ export function Hero() {
             Since AI Hackathon 2026 &thinsp;·&thinsp; €50,000 cash prize pool &thinsp;·&thinsp; Registration open
           </p>
 
-          <div className="flex flex-col sm:flex-row" style={{ gap: "12px" }}>
+          {/* CTAs */}
+          <div
+            className="flex flex-col sm:flex-row"
+            style={{ gap: "12px" }}
+          >
+            {/* Primary — hackathon */}
             <Link
               href="/hackathon"
               style={{
@@ -79,6 +77,7 @@ export function Hero() {
             >
               Learn more →
             </Link>
+            {/* Secondary — outlined */}
             <Link
               href="/partners"
               className="hero-cta-secondary"
@@ -98,12 +97,12 @@ export function Hero() {
             >
               Partner with Since AI →
             </Link>
+
           </div>
-        </div>
       </div>
 
-      {/* Partner marquee — bottom-docked */}
-      <div className="h-10 shrink-0" />
+      {/* ── Partner marquee — bottom-docked ─────────────────── */}
+      <div className="h-16 shrink-0" />
       <PartnerMarquee />
     </section>
   );
