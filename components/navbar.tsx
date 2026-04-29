@@ -124,7 +124,7 @@ export const Navbar = () => {
           aria-label="Navigation menu"
         >
           {/* Top row */}
-          <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-3xl)" }}>
+          <div className="flex items-center justify-between" style={{ marginBottom: "var(--space-xl)" }}>
             <Logo />
             <button
               onClick={() => setMenuOpen(false)}
@@ -166,8 +166,8 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          {/* CTA — pinned to bottom */}
-          <div className="mt-auto">
+          {/* CTA */}
+          <div style={{ marginTop: "var(--space-xl)" }}>
             <a
               href="https://sinceai.app/sign-up"
               target="_blank"
