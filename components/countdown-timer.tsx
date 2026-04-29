@@ -55,7 +55,7 @@ function CountdownUnits({ timeLeft }: { timeLeft: TimeLeft | Record<string, numb
   return (
     <div
       style={{
-        display: "inline-grid",
+        display: "grid",
         gridTemplateColumns: "auto 1fr auto 1fr auto 1fr auto",
         rowGap: "6px",
         columnGap: "8px",

@@ -144,7 +144,7 @@ export default function HackathonPage() {
       <main className="flex flex-col w-full bg-black min-h-screen">
 
         {/* ── SECTION 1: Hero ─────────────────────────────────── */}
-        <section className="relative w-full flex flex-col">
+        <section className="relative w-full flex flex-col" style={{ paddingLeft: "var(--space-lg)", paddingRight: "var(--space-lg)" }}>
           <Image
             src="/assets/images/educity-hero.webp"
             alt="EduCity, Turku — venue for Since AI Hackathon 2026"
@@ -167,7 +167,8 @@ export default function HackathonPage() {
             className="relative z-10 mx-auto w-full"
             style={{
               maxWidth: "1200px",
-              padding: "clamp(100px, 15vh, 150px) var(--space-lg) var(--space-2xl)",
+              paddingTop: "clamp(100px, 15vh, 150px)",
+              paddingBottom: "var(--space-2xl)",
             }}
           >
             <h1
@@ -199,7 +200,7 @@ export default function HackathonPage() {
           </p>
 
             {/* Countdown */}
-            <div>
+            <div className="w-full sm:w-fit">
               <HackathonCountdown
                 startDate="2026-11-06T09:00:00"
                 endDate="2026-11-08T23:59:00"
@@ -258,8 +259,8 @@ export default function HackathonPage() {
             <h2
               style={{
                 fontFamily: "var(--font-mono)",
-                fontSize: "clamp(36px, 4vw, 48px)",
-                fontWeight: 700,
+                fontSize: "36px",
+                fontWeight: 500,
                 color: "#fff",
                 margin: 0,
                 marginBottom: "var(--space-xl)",
@@ -268,7 +269,7 @@ export default function HackathonPage() {
               Powered by world-class infrastructure.
             </h2>
 
-            <div className="flex flex-col md:flex-row" style={{ marginLeft: "calc(-1 * var(--space-lg))" }}>
+            <div className="flex flex-col md:flex-row md:[margin-left:calc(-1*var(--space-lg))]">
               {[
                 { name: "Google", label: "Compute partner" },
                 { name: "AMD",    label: "Compute partner" },
@@ -276,8 +277,7 @@ export default function HackathonPage() {
               ].map((partner, i) => (
                 <div
                   key={partner.name}
-                  className={i > 0 ? "border-t md:border-t-0 md:border-l border-[var(--color-border)]" : ""}
-                  style={{ padding: "var(--space-md) var(--space-lg)" }}
+                  className={`py-[var(--space-md)] md:px-[var(--space-lg)] ${i > 0 ? "border-t md:border-t-0 md:border-l border-[var(--color-border)]" : ""}`}
                 >
                   <p style={{
                     fontFamily: "var(--font-mono)",
