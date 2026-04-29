@@ -3,10 +3,10 @@ import { PartnerMarquee } from "./PartnerMarquee";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col min-h-[85vh] md:min-h-screen bg-black">
+    <section className="relative flex flex-col bg-black">
       <div
-        className="mx-auto w-full"
-        style={{ maxWidth: "1200px", padding: "150px var(--space-lg) 0" }}
+        className="mx-auto w-full pt-20 md:pt-[clamp(100px,15vh,150px)]"
+        style={{ maxWidth: "1200px", paddingLeft: "var(--space-lg)", paddingRight: "var(--space-lg)" }}
       >
           {/* H1 */}
           <h1
@@ -100,8 +100,6 @@ export function Hero() {
 
           </div>
       </div>
-
-      <div className="flex-1" />
 
       {/* ── Partner marquee — bottom-docked ─────────────────── */}
       <div className="h-10 shrink-0" />
