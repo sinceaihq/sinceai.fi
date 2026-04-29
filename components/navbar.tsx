@@ -52,7 +52,7 @@ export const Navbar = () => {
           style={{ maxWidth: "1200px" }}
         >
           {/* Logo */}
-          <Link href="/" aria-label="Since AI — home">
+          <Link href="/" aria-label="Since AI — home" className={menuOpen ? "invisible md:visible" : ""}>
             <Logo />
           </Link>
 
