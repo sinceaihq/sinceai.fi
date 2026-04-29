@@ -259,8 +259,8 @@ export default function HackathonPage() {
             <h2
               style={{
                 fontFamily: "var(--font-mono)",
-                fontSize: "clamp(36px, 4vw, 48px)",
-                fontWeight: 700,
+                fontSize: "36px",
+                fontWeight: 500,
                 color: "#fff",
                 margin: 0,
                 marginBottom: "var(--space-xl)",
