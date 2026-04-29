@@ -102,7 +102,7 @@ export function Hero() {
       </div>
 
       {/* ── Partner marquee — bottom-docked ─────────────────── */}
-      <div className="h-10 shrink-0" />
+      <div className="h-16 shrink-0" />
       <PartnerMarquee />
     </section>
   );
