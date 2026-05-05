@@ -89,7 +89,7 @@ export const PARTNERS: Partner[] = [
   },
   {
     name: "Inovexus",
-    logo: "/assets/sponsors/inovexus.svg",
+    logo: "/assets/sponsors/Inovexus.svg",
     url: "https://inovexus.com/",
     tier: 2,
   },
