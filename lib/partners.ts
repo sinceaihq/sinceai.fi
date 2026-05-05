@@ -88,6 +88,12 @@ export const PARTNERS: Partner[] = [
     tier: 2,
   },
   {
+    name: "Inovexus",
+    logo: "/assets/sponsors/inovexus.svg",
+    url: "https://inovexus.com/",
+    tier: 2,
+  },
+  {
     name: "Aalto AI",
     logo: "/assets/supports/aaltoai.png",
     url: "https://www.aaltoai.com/",
