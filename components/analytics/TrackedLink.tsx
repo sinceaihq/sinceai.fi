@@ -2,7 +2,7 @@
 
 import { trackEvent, type AnalyticsEvent } from "@/lib/gtag";
 
-interface TrackedDiscordLinkProps {
+interface TrackedLinkProps {
   href: string;
   analyticsEvent: AnalyticsEvent;
   className?: string;
@@ -10,13 +10,13 @@ interface TrackedDiscordLinkProps {
   children: React.ReactNode;
 }
 
-export function TrackedDiscordLink({
+export function TrackedLink({
   href,
   analyticsEvent,
   className,
   ariaLabel,
   children,
-}: TrackedDiscordLinkProps) {
+}: TrackedLinkProps) {
   return (
     <a
       href={href}

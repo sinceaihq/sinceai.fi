@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ORG } from "@/lib/org";
-import { TrackedDiscordLink } from "@/components/analytics/TrackedDiscordLink";
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 
 interface FooterProps {
   discordUrl?: string;
@@ -100,14 +100,14 @@ export const Footer: React.FC<FooterProps> = () => {
             <div className="flex flex-wrap gap-x-6">
               {SOCIAL_LINKS.map((s) =>
                 s.name === "Discord" ? (
-                  <TrackedDiscordLink
+                  <TrackedLink
                     key={s.name}
                     href={s.href}
                     analyticsEvent="discord_join_click"
                     className="text-sm text-neutral-400 hover:text-white transition-colors leading-loose focus-visible:outline focus-visible:outline-2 focus-visible:outline-white whitespace-nowrap"
                   >
                     {s.name} ↗
-                  </TrackedDiscordLink>
+                  </TrackedLink>
                 ) : (
                   <a
                     key={s.name}
