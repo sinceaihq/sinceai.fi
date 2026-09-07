@@ -9,6 +9,7 @@ import {
   DialogContent,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { trackEvent, ANALYTICS_EVENTS } from "@/lib/gtag";
 
 const STORAGE_KEY = "hackathon2026_popup_v1";
 
@@ -182,7 +183,10 @@ Backed by Google for Developers, ElevenLabs, Aiven, LUMI supercomputer, and more
           {/* CTA */}
           <Link
             href="https://sinceai.app/events/since-ai-hackathon-2026"
-            onClick={dismiss}
+            onClick={() => {
+              trackEvent(ANALYTICS_EVENTS.REGISTER_CLICK);
+              dismiss();
+            }}
             className="popup-apply-btn"
             style={{
               position: "relative",

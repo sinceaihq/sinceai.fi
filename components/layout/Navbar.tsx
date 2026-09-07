@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Logo from "@/components/brand/logo";
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 
 const NAV_LINKS = [
   { label: "Hackathon", href: "/hackathon" },
@@ -71,14 +72,13 @@ export const Navbar = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <a
+          <TrackedLink
             href="https://sinceai.app/sign-up"
-            target="_blank"
-            rel="noopener noreferrer"
+            analyticsEvent="register_click"
             className="hidden md:inline-block text-[13px] font-bold text-black bg-white rounded-none px-4 py-2 border border-white whitespace-nowrap transition-colors duration-300 hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             Apply →
-          </a>
+          </TrackedLink>
 
           {/* Mobile hamburger */}
           <button
@@ -147,14 +147,13 @@ export const Navbar = () => {
 
             {/* CTA */}
             <div className="mt-16">
-              <a
+              <TrackedLink
                 href="https://sinceai.app/sign-up"
-                target="_blank"
-                rel="noopener noreferrer"
+                analyticsEvent="register_click"
                 className="inline-block text-[13px] font-bold text-black bg-white rounded-none px-5 py-3 border border-white whitespace-nowrap transition-colors duration-300 hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
               >
                 Apply →
-              </a>
+              </TrackedLink>
             </div>
           </motion.div>
         )}

@@ -8,6 +8,7 @@ import StructuredData from "@/components/StructuredData";
 import { HackathonCountdown } from "@/components/HackathonCountdown";
 import { FadeIn } from "@/components/motion-primitives/fade-in";
 import { Judges } from "@/components/sections/hackathon";
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 
 // ── Schemas ────────────────────────────────────────────────────────────────
 
@@ -160,14 +161,13 @@ export default function HackathonPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a
+              <TrackedLink
                 href="https://sinceai.app/sign-up"
-                target="_blank"
-                rel="noopener noreferrer"
+                analyticsEvent="register_click"
                 className="inline-block bg-white text-black rounded-none px-6 py-3 font-semibold hover:bg-neutral-100 transition-colors cursor-pointer text-sm"
               >
                 Apply now →
-              </a>
+              </TrackedLink>
               <Link
                 href="/partners"
                 className="inline-block border border-white/20 text-white rounded-none px-6 py-3 font-semibold hover:border-white transition-colors cursor-pointer text-sm"
@@ -480,14 +480,13 @@ export default function HackathonPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-12">
-              <a
+              <TrackedLink
                 href="https://sinceai.app/sign-up"
-                target="_blank"
-                rel="noopener noreferrer"
+                analyticsEvent="register_click"
                 className="inline-block bg-white text-black rounded-none px-6 py-3 font-semibold hover:bg-neutral-100 transition-colors cursor-pointer text-sm"
               >
                 Apply now →
-              </a>
+              </TrackedLink>
               <a
                 href="https://t.me/sinceaihq"
                 target="_blank"
